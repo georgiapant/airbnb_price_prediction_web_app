@@ -3,7 +3,7 @@ import datetime
 
 
 logger = logging
-log_file = "task" + str(datetime.datetime.today().date()) + ".log"
+log_file = "model" + str(datetime.datetime.today().date()) + ".log"
 logger.basicConfig(
     # Standard format
     format="%(asctime)s - %(message)s",

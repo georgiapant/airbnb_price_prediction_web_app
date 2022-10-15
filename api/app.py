@@ -6,7 +6,7 @@ from flask import Flask, jsonify
 # when you want to enable CORS, you wish to enable
 # it for all use cases on a domain.
 from flask_cors import CORS
-from controllers import ping_controller, stats_controller, employee_controller, etl_controller
+from controllers import model_controller, stats_controller
 
 app = Flask(__name__)
 # Enabling CORS for our app
@@ -28,9 +28,7 @@ def bad_request(error):
     return jsonify({"error": "Bad Request"}), 400
 
 
-app.register_blueprint(ping_controller.api)
-app.register_blueprint(etl_controller.api)
-app.register_blueprint(employee_controller.api)
+app.register_blueprint(model_controller.model_api)
 app.register_blueprint(stats_controller.api)
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ from services import stats_service
 api = Blueprint(
     name="stats_controller",
     import_name="stats_controller",
-    url_prefix="/emp/api/v1/stats",
+    url_prefix="/api/v1.0/stats",
 )
 
 
