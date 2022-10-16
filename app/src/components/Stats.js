@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from "react";
 import { Typography, Divider, Row, Col, Spin } from "antd";
 import {
@@ -16,6 +17,7 @@ import {
   PieChart,
   Pie,
   Cell,
+  Treemap,
 } from "recharts";
 import { getStats } from "../api/api";
 
@@ -38,7 +40,7 @@ const Stats = () => {
       {statsData ? (
         <>
           <Row className="row" gutter={[24, 24]}>
-            <Col style={{ width: "100%" }}>
+            <Col style={{ width: "50%" }}>
               <div className="chart-container">
                 <Title level={4}>My super line chart</Title>
                 <div className="chart-inner">
@@ -57,12 +59,33 @@ const Stats = () => {
                       <YAxis />
                       <Tooltip />
                       <Legend />
-                      <Line
-                        type="monotone"
-                        dataKey="pv"
-                        stroke="#8884d8"
-                        activeDot={{ r: 8 }}
-                      />
+                      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }}/>
+                      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+              </div>
+            </Col>
+            <Col style={{ width: "50%" }}>
+              <div className="chart-container">
+                <Title level={4}>My super line chart</Title>
+                <div className="chart-inner">
+                  <ResponsiveContainer>
+                    <LineChart
+                      data={statsData.lineChart}
+                      margin={{
+                        top: 5,
+                        right: 30,
+                        left: 20,
+                        bottom: 5,
+                      }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="name" />
+                      <YAxis />
+                      <Tooltip />
+                      <Legend />
+                      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }}/>
                       <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
                     </LineChart>
                   </ResponsiveContainer>

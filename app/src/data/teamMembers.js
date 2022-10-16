@@ -1,33 +1,27 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default [
   {
-    name: "John Tsevdos",
+    name: "Athina Mousia",
     image: "https://avatars1.githubusercontent.com/u/175707",
     description:
-      "Hi, I’m a front-end developer from Athens. Find more about me at tsevdos.me",
+      "Hi, I’m a ...",
   },
   {
-    name: "John Tsevdos",
+    name: "Dimitris Romios",
     image: "https://avatars1.githubusercontent.com/u/175707",
     description:
-      "Hi, I’m a front-end developer from Athens. Find more about me at tsevdos.me",
+      "Hi, I’m a ...",
   },
   {
-    name: "John Tsevdos",
+    name: "Evgenia Moustridi",
     image: "https://avatars1.githubusercontent.com/u/175707",
     description:
-      "Hi, I’m a front-end developer from Athens. Find more about me at tsevdos.me",
+      "Hi, I’m a ...",
   },
   {
-    name: "John Tsevdos",
+    name: "Georgia Pantalona",
     image: "https://avatars1.githubusercontent.com/u/175707",
     description:
-      "Hi, I’m a front-end developer from Athens. Find more about me at tsevdos.me",
-  },
-  {
-    name: "John Tsevdos",
-    image: "https://avatars1.githubusercontent.com/u/175707",
-    description:
-      "Hi, I’m a front-end developer from Athens. Find more about me at tsevdos.me",
+      "Hi, I’m an aspiring data scientist.",
   },
 ];

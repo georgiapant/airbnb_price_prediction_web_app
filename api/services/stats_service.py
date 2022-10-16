@@ -11,32 +11,43 @@ def main():
     Invokes the methods from this service and generates a dict with this format:
 
         {
-        "data": {
-            "department_stats": [
-                {
-                    "department": "Accounting",
-                    "stats": {
-                        "employee_count": 61,
-                        "mean_salary": 21797.07295081967
-                    }
-                },
-              ......
-            ],
-            "job_stats": [
-                {
-                    "job": "Account Coordinator",
-                    "stats": {
-                        "job_count": 8,
-                        "max_salary": 26322.71,
-                        "min_salary": 18564.08
-                    }
-                },
-                 ....
-
-            ]
-        }
-    }
+            "stats":{
+                "histogram_data":[ 
+                    {
+                        "price_range":"0-50",
+                        "count":2 },
+                    {
+                        "price_range":"51-100", 
+                        "count":143
+                    }, 
+                    {
+                        "price_range":"101-150",
+                        "count":28 
+                    },
+                    {
+                        "price_range":"150-max", 
+                        "count":28
+                    } ],
+                "pie_chart_data":[ 
+                    {
+                        "room_type":"Private room",
+                        "count":150 },
+                    {
+                        "room_type":"Entire home/apt", 
+                        "count":50
+                    } ],
+                "bar_char_data":[ 
+                    {
+                        "neighborhood":"Centrum-West",
+                        "avg_price":120.3 },
+                    {
+                        "neighborhood":"Slotervaart", 
+                        "avg_price":81
+                    } ]
+                }
+            }
     :return:
+    
     """
     job_stats = max_min_per_job()
     department_stats = avg_salary_emp_count_per_department()

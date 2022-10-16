@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link, useLocation } from "react-router-dom";
 import { Layout, Menu } from "antd";
 
@@ -21,7 +22,7 @@ const AppHeader = () => {
   return (
     <Header>
       <Link to="/">
-        <h1>Team 00</h1>
+        <h1>Team 03</h1>
       </Link>
       <Menu
         theme="dark"
