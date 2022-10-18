@@ -75,10 +75,12 @@ const Models = () => {
             name="textField2"
             value={formValues.textField2}
             onChange={handleInputChange}
+            type='number'
           />
         </Form.Item>
         <Form.Item label="Single Select">
           <Select
+
             name="selectField"
             defaultValue=""
             value={formValues.selectField}
