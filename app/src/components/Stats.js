@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect, PureComponent } from "react";
-import { Typography, Divider, Row, Col, Spin } from "antd";
+import { Typography, Divider, Row, Col, Spin, Table } from "antd";
 
 import {
   ResponsiveContainer,
@@ -21,6 +21,7 @@ import {
   Treemap
 } from "recharts";
 import { getStats } from "../api/api";
+import {columns, data} from "../data/neighbourhood_groups";
 
 const { Title } = Typography;
 const COLORS = ['#F47A1F','#7f1005', '#FDBB2F', '#377B2B', '#7AC142', '#007CC3',  '#00529B'] //, '#8DC77B', '#A5D297', '#E2CF45', '#F8C12D'];
@@ -52,7 +53,6 @@ class CustomizedContent extends PureComponent {
     );
   }
 }
-
 
 const Stats = () => {
   const [statsData, setStatsData] = useState(null);
@@ -98,38 +98,6 @@ const Stats = () => {
             </Col>
           </Row> */}
           <Row className="row" gutter={[24, 24]}>
-            <Col style={{ width: "100%" }}>
-              <div className="chart-container">
-                <Title level={4}>Listings per price </Title>
-                <div className="chart-inner">
-                  <ResponsiveContainer>
-                    <AreaChart
-                      data={statsData.barChart_prices}
-                      margin={{
-                        top: 10,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                      }}
-                    >
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="price" />
-                      <YAxis />
-                      <Tooltip />
-                      <Area
-                        type="monotone"
-                        dataKey="num"
-                        stackId="1"
-                        stroke="#7f1005"
-                        fill="#7f1005"
-                      />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row className="row" gutter={[24, 24]}>
             <Col sm={{ span: 24 }} lg={{ span: 12 }}>
               <div className="chart-container">
                 <Title level={4}>Average price per people that are accommodated</Title>
@@ -167,7 +135,7 @@ const Stats = () => {
                         outerRadius={100}
                         nameKey="type"
                         label>
-                        {statsData.pieChart_room_type.map((entry, index) => (
+                        {statsData.pieChart_room_type.map((_entry, index) => (
                           <Cell key={`cell-${index}`} 
                                 fill={COLORS[index % COLORS.length]} />
                           ))}
@@ -180,12 +148,53 @@ const Stats = () => {
               </div>
             </Col>
           </Row>
-          <Row className="row" gutter={[24, 24]}>
+          <Row className="row" gutter={[24, 24]} >
+          <Col style={{ width: "100%" }} >
+          <div className="table-container">
+            <Title level={4}>Neighbourhood groupings</Title>
+                <div className="chart-inner-table">
+                {/* <ResponsiveContainer height="100%"> */}
+                    <Table columns={columns} dataSource={data} />
+                {/* </ResponsiveContainer> */}
+              </div>
+            </div>
+          </Col>
+          <Col style={{ width: "50%" }}>
+              <div className="chart-container">
+                <Title level={4}>Listings per price </Title>
+                <div className="chart-inner">
+                  <ResponsiveContainer>
+                    <AreaChart
+                      data={statsData.barChart_prices}
+                      margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                      }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="price" />
+                      <YAxis />
+                      <Tooltip />
+                      <Area
+                        type="monotone"
+                        dataKey="num"
+                        stackId="1"
+                        stroke="#7f1005"
+                        fill="#7f1005"
+                      />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </div>
+              </div>
+            </Col>
+          <Row lassName="row" gutter={[24, 24]} ></Row>
             <Col style={{ width: "50%" }}>
               <div className="chart-container">
                 <Title level={4}>AVG price per neighbourhood group</Title>
-                <div className="chart-inner">
-                  <ResponsiveContainer>
+                <div className="chart-inner" >
+                  <ResponsiveContainer style={{height:"100%" }}>
                     <Treemap
                         width={730}
                         height={250}
@@ -219,7 +228,7 @@ const Stats = () => {
                         right: 60,
                         left: 20,
                         bottom: 90,
-                      }} barCategoryGap={17}>
+                      }} barCategoryGap={35}>
                       <CartesianGrid strokeDasharray="3 3" height={200} />
                       <XAxis dataKey="neighbourhood" angle={30} textAnchor="begining" interval={0} />
                       <YAxis height={10}/>
