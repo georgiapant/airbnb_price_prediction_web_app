@@ -149,17 +149,17 @@ const Stats = () => {
             </Col>
           </Row>
           <Row className="row" gutter={[24, 24]} >
-          <Col style={{ width: "100%" }} >
-          <div className="table-container">
+          <Col style={{ width: "100%" }} sm={{ span: 24 }} lg={{ span: 24 }}>
+            <div className="table-container">
             <Title level={4}>Neighbourhood groupings</Title>
                 <div className="chart-inner-table">
-                {/* <ResponsiveContainer height="100%"> */}
-                    <Table columns={columns} dataSource={data} />
-                {/* </ResponsiveContainer> */}
+                    <Table columns={columns} dataSource={data} size="small"/>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col style={{ width: "50%" }}>
+            </Col>
+          </Row>
+          <Row className="row" gutter={[24, 24]}>
+            <Col style={{ width: "50%" }}>
               <div className="chart-container">
                 <Title level={4}>Listings per price </Title>
                 <div className="chart-inner">
@@ -189,7 +189,6 @@ const Stats = () => {
                 </div>
               </div>
             </Col>
-          <Row lassName="row" gutter={[24, 24]} ></Row>
             <Col style={{ width: "50%" }}>
               <div className="chart-container">
                 <Title level={4}>AVG price per neighbourhood group</Title>
@@ -208,39 +207,38 @@ const Stats = () => {
                         >
                       <Tooltip />
                       <Legend />
-                      
-                    </Treemap>
-                  </ResponsiveContainer>
+                      </Treemap>
+                    </ResponsiveContainer>
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
             </Row>
-            <Row>
-            <Col style={{ width: "100%" }}>
-              <div className="chart-container">
-                <Title level={4}>Average price per neighbourhood group</Title>
-                <div className="chart-inner">
-                  <ResponsiveContainer>
-                    <BarChart
-                      data={statsData.barChart_all_neigh}
-                      margin={{
-                        top: 20,
-                        right: 60,
-                        left: 20,
-                        bottom: 90,
-                      }} barCategoryGap={35}>
-                      <CartesianGrid strokeDasharray="3 3" height={200} />
-                      <XAxis dataKey="neighbourhood" angle={30} textAnchor="begining" interval={0} />
-                      <YAxis height={10}/>
-                      <Tooltip />
-                      <Legend verticalAlign="top" />
-                      <Bar dataKey="price" fill="#7f1005" label={{ position: 'top' }} />
-                    </BarChart>
-                  </ResponsiveContainer>
+            <Row className="row" gutter={[24, 24]}>
+              <Col style={{ width: "100%" }}>
+                <div className="chart-container">
+                  <Title level={4}>Average price per neighbourhood</Title>
+                  <div className="chart-inner">
+                    <ResponsiveContainer>
+                      <BarChart
+                        data={statsData.barChart_all_neigh}
+                        margin={{
+                          top: 20,
+                          right: 60,
+                          left: 20,
+                          bottom: 90,
+                        }} >
+                        <CartesianGrid strokeDasharray="3 3" height={200} />
+                        <XAxis dataKey="neighbourhood" angle={30} textAnchor="begining" interval={0} />
+                        <YAxis height={10}/>
+                        <Tooltip />
+                        <Legend verticalAlign="top" />
+                        <Bar dataKey="price" fill="#7f1005" label={{ position: 'top' }} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
         </>
       ) : (
         <div className="stats-loader">
