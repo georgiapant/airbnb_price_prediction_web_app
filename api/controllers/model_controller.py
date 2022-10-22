@@ -76,15 +76,15 @@ def model():
     if not request.json:
         logger.error(f"Attempted to get price from {request.remote_addr}. Bad request: {request.json}")
         abort(400)
-    if 'id' not in request.json or 'host_id' not in request.json:
+    if  'host_id' not in request.json:
         logger.error(f"Id or host Id not provided. Bad request: {request.json}")
         abort(400)
         
     if 'latitude' not in request.json or 'longitude' not in request.json:
         logger.error(f"Latitude or longitude not provided. Bad request: {request.json}")
         abort(400)
-    if 'room_type' not in request.json or 'minimum_nights' not in request.json or 'accomodates' not in request.json \
-                            or 'beds' not in request.json or 'has_wifi' not in request.json:
+        
+    if 'room_type' not in request.json or 'minimum_nights' not in request.json or 'accomodates' not in request.json:               
         logger.error(f"Room information not provided. Bad request: {request.json}")
         abort(400)
     

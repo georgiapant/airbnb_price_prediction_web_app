@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 import os
 from csv import reader, DictWriter
 from unittest import result
@@ -7,6 +8,8 @@ from  geopy.distance import geodesic
 import pandas as pd
 from flask import  abort, jsonify
 import numpy as np
+import json
+import joblib
 
 def main(data):
     """
@@ -16,43 +19,65 @@ def main(data):
     """
     # post shcema
     # data = {
-#     "host_id":3159,
-#     "latitude":52.36435,
-#     "longitude":4.94358,
-#     "room_type":"Private room",
-#     "minimum_nights":3,
-#     "maximum_nights":15
-#     "accomodates": 2,
-    # "neighbouhood": "ΓΚΥΖΙ",
-    # "property_type": "Room in boutique hotel"  
-    # "bathrooms": 1,
-    # "shared":False,
-    # "tv": True,
-    # "kitchen":False,
-    # "air_conditioning": True
-#     }
-
+        # "host_id":3159,
+        # "listing_info":{
+        #     "latitude":52.36435,
+        #     "longitude":4.94358,
+        #     "room_type":"Private room",
+        #     "minimum_nights":3,
+        #     "maximum_nights":15,
+        #     "accomodates": 2,
+        #     "neighbouhood": "ΓΚΥΖΙ",
+        #     "property_type": "Room in boutique hotel",
+        #     "bathrooms": 1,
+        #     "shared_bathroom":False,
+        #     "has_availability":True,
+        #     "license":True, 
+        #     "instant_bookable": True
+        #     },
+        # "amenities": {
+        #     'kitchen':True,
+        #     'air_conditioning':False,
+        #     'high_end_electronics':True,
+        #     'bbq':False,
+        #     'balcony': True,
+        #     'nature_and_views':False,
+        #     'bed_linen':True,
+        #     'breakfast':False,
+        #     'tv':True,
+        #     'coffee_machine':False,
+        #     'cooking_basics':False,
+        #     'elevator':True, 
+        #     'gym':False, 
+        #     'child_friendly':True, 
+        #     'parking':False,
+        #     'outdoor_space':False,
+        #     'host_greeting':False, 
+        #     'hot_tub_sauna_or_pool':False,
+        #     'internet':True, 
+        #     'long_term_stays':True,
+        #     'pets_allowed':False,
+        #     'private_entrance':False,
+        #     'secure':True, 
+        #     'self_check_in':True,
+        #     'smoking_allowed':False,
+        #     'accessible': True, 
+        #     'event_suitable':False,
+        #     "tv": True,
+        #     "kitchen":False,
+        #     "air_conditioning": True
+        #     }
+        #   }
+    #resultset = [value for key, value in your_dict.items() if key not in your_blacklisted_set]
     try:
-        info = get_host_info(data['host_id'])
-
-        # Error handling for the existance of the listing in our repo
-        if not info:
-            return None
-        elif 'error' in info:
-            return info
-        
-        preprocessed_data = preprocess_dataset(data)
-        final_data= pd.concat([preprocessed_data, info], axis=1)
+        final_data = preprocess_dataset(data)
         price = get_price(final_data)
 
-        price = np.exp(price)
-        
         info_to_return = {
             "host_id": data['host_id'],
-            "reviews_per_month": info['reviews_per_month'],
-            "neighbourhood": data['neighbourhood'],
-            "room_type": data['room_type']
-
+            "number_of_reviews": final_data['number_of_reviews'],
+            "neighbourhood": data['listing_info']['neighbourhood'],
+            "room_type": data['listing_info']['room_type']
         }
 
         return {'listing_info': info_to_return, 'prediction': {'price': price}}
@@ -61,86 +86,69 @@ def main(data):
         logger.error(f"Could not predict price {exception}")
         return None
 
+
 def preprocess_dataset(data):
-    # some of the below we ask 
-    feature_names = ['neighbourhood_cleansed',
-       'latitude', 'longitude', 'property_type', 'room_type', 'accommodates',
-       'minimum_nights', 'maximum_nights', 'has_availability',
-       'availability_30', 'availability_365', 'number_of_reviews', 'license',
-       'instant_bookable', 'kitchen', 'air_conditioning', 'balcony',
-       'bed_linen', 'tv', 'coffee_machine', 'cooking_basics', 'elevator',
-       'parking', 'outdoor_space', 'host_greeting', 'internet',
-       'long_term_stays', 'private_entrance', 'neighbourhood',
-       'amenities_number', 'distance_center', 'shared_bath', 'bathrooms',
-       'occupancy', 'bookings_per_year']
 
+    host_info = get_host_info(data['host_id'])
 
-    # features = pd.DataFrame(columns = feature_names)
+    # Error handling for the existance of the listing in our repo
+    if not host_info:
+        return None
+    elif 'error' in host_info:
+        return host_info
+
     try:
-        data = pd.DataFrame(data, index=[0])
-        
-        data = log_transform(data)
-        distance = get_distance(data[['latitude', 'longitude']])
-        neigh = get_neigh_group(data[['neighbourhood']])
-        prop_type = pd.get_dummies(data[['property_type']])
-        room_type = pd.get_dummies(data[['room_type']])
-        data.drop(columns=['neighbourhood', 'property_type','room_type'], inplace=True)
-
-        data = pd.concat([data, distance, neigh, prop_type, room_type], axis=1)
+        listing_info = missing_values_n_encoding(data['listing_info'])
+        amenities = get_amenities(data['amenities'])
+        final_data = pd.concat([listing_info, amenities, host_info])
         # logger.error(data)
-        # Add more
-        return data
+        return final_data
     except Exception as exception:
         logger.error(f"Could not preprocess data, exception: {exception}")
 
+def get_amenities(amenities_data):
+    amenities = pd.DataFrame.from_dict(amenities_data, orient='index')
+    amenities.reset_index(inplace=True, drop=True)
+    amenities = amenities.astype(int)
+    amenities["amenities_number"]=amenities.sum(axis=1)
+    return amenities
 
-def log_transform(df):
-    numerical_columns = ['neighborhood_overview',
-        'host_listings_count', 'host_verifications', 'accommodates',
-       'bedrooms', 'beds', 'minimum_nights', 'maximum_nights', 'number_of_reviews',
-       'number_of_reviews_ltm', 'number_of_reviews_l30d', 
-       'calculated_host_listings_count',
-       'reviews_per_month', 'amenities_number',
-        'bathrooms', 'occupancy',
-       'bookings_per_year', 'price']
+def missing_values_n_encoding(listing_info):
 
-    for col in numerical_columns:
-        try:
-            df[col] = df[col].astype('float64').replace(0.0, 0.01) # Replacing 0s with 0.01
-            df[col] = np.log(df[col])
-        except:
-            continue
-    return df
+    #     'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type',
+    #     'room_type', 'accommodates','minimum_nights', 'maximum_nights',
+    #     'availability_90', 'number_of_reviews', 'bathrooms']
 
-def get_neigh_group(data_neighbourhood):
-    neigh_group = pd.read_csv(...)
-    data_neighbourhood['neighbourhood_cleansed_group'] = data_neighbourhood['neighbourhood_cleansed'].map(neigh_group)
-    data_neighbourhood = pd.get_dummies(data_neighbourhood)
-    data_neighbourhood.drop(columns=['neighbourhood_cleansed_group'], inplace=True)
-    return data_neighbourhood
 
-def get_distance(data):
-    data['lat_center'] = 37.9715
-    data['lon_center'] = 23.7257
-    data['distance_center'] = data.apply(lambda x: geodesic((x['latitude'], x['longitude']), (x['lat_center'], x['lon_center'])).km, axis = 1)
-    data = data.drop(columns = ['lat_center', 'lon_center'])
-    return data
+    with open(os.getcwd() + "/api/repo/neighbourhood_groupings.json", "r") as read_content:
+        neigh_group = json.load(read_content)
+
+    listing_info = pd.DataFrame.from_dict(listing_info, orient='index')
+    listing_info.reset_index(inplace=True, drop=True)
+    
+    listing_info['lat_center'] = 37.9715
+    listing_info['lon_center'] = 23.7257
+    listing_info['neighbourhood_cleansed_group'] = listing_info['neighbourhood_cleansed'].map(neigh_group)
+    listing_info['distance_parthenon'] = listing_info.apply(lambda x: geodesic((x['latitude'], x['longitude']), (x['lat_center'], x['lon_center'])).km, axis = 1)
+    listing_info = listing_info.drop(columns=['lat_center','lon_center'])
+
+    listing_info['shared_bathroom'] = listing_info['shared_bathroom'].astype(int)
+    listing_info['has_availability'] = listing_info['has_availability'].astype(int)
+    listing_info['license'] = listing_info['license'].astype(int)
+    listing_info['instant_bookable'] = listing_info['instant_bookable'].astype(int)
+    return listing_info
+
 
 def get_price(data):
-    # TODO
-    # model = model.load("xxx")
-    # scaler = scaler.laod()
-    # data_scaled = scaler.transform()
-    # price = model.predict(data_scaled)
-    price = 50
-    
+    loaded_model = joblib.load(os.getcwd() + "/api/repo/pipeline.pkl")
+    price = loaded_model.predict(data)
     return price
 
 def get_host_info(host_id):
     
 
-    # info_to_get = ['host_about', 'host_response_time', 'host_response_rate',
-    #    'host_is_superhost', 'host_verifications',  'number_of_reviews', 'license',
+    # list_ask = ['host_about', 'host_response_time', 'host_response_rate',
+    #    'host_is_superhost', 'host_verifications', 
     #    'calculated_host_listings_count']
 
 
