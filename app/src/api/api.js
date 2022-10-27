@@ -1,10 +1,10 @@
 // import React from 'react'
 import axios from "axios";
 
-export const makeModelsPost = async (postData) => {
-  const res = await axios.post("/models", postData);
-  const data = await res.data;
-
+export const makeModelsPost = async (formValues) => {
+  const res = await axios.post("http://localhost:3001/models", formValues);
+  const data = await res.json();
+  
   return data;
 };
 
