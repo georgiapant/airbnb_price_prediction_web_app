@@ -12,6 +12,9 @@ import {
   Divider,
 } from "antd";
 import { makeModelsPost } from "../api/api";
+import {amenities} from "../data/amenities";
+import {property_type} from "../data/property_type";
+import { neighbourhood } from '../data/neighbourhoods';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -24,10 +27,15 @@ const formValuesInitialState = {
   minimum_nights: "",
   accommodates: "",
   room_type: "",
+  property_type:"",
   amenities: [],
   radioField: "",
+  bathrooms:"",
   shared_bathroom: false,
-  license: false
+  license: false,
+  neighbourhood:"",
+  has_availability: false,
+  instant_bookable: false
 };
 
 const Models = () => {
@@ -42,6 +50,12 @@ const Models = () => {
   const handleSelectChange = (value) => {
     setFormValues({ ...formValues, room_type: value });
   };
+  const handleSelectChangeWithSearch = (value) => {
+    setFormValues({...formValues, property_type: value})
+  };
+  const handleSelectChangeWithSearch2 = (value) => {
+    setFormValues({...formValues, neighboorhoud: value})
+  };
   const handleMultipleSelectChange = (value) => {
     setFormValues({ ...formValues, amenities: value });
   };
@@ -50,6 +64,12 @@ const Models = () => {
   };
   const handleSwitchChange2 = (value) => {
     setFormValues({ ...formValues, license: value});
+  };
+  const handleSwitchChange3 = (value) => {
+    setFormValues({ ...formValues, has_availability: value});
+  };
+  const handleSwitchChange4 = (value) => {
+    setFormValues({ ...formValues, instant_bookable: value});
   };
   const resetForm = () => {
     setFormValues(formValuesInitialState);
@@ -71,7 +91,7 @@ const Models = () => {
       <form>
         <Form.Item label="Host ID">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="hostID"
             value={formValues.hostID}
             onChange={handleInputChange}
@@ -79,7 +99,7 @@ const Models = () => {
         </Form.Item>
         <Form.Item label="Latitude">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="latitude"
             value={formValues.latitude}
             onChange={handleInputChange}
@@ -88,16 +108,38 @@ const Models = () => {
         </Form.Item>
         <Form.Item label="Longitude">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="longitude"
             value={formValues.longitude}
             onChange={handleInputChange}
             type='number'
           />
         </Form.Item>
+        <Form.Item label="Neighbourhood">
+          <Select
+
+            name="neighbourhood"
+            placeholder="Select a neighbourhood"
+            showSearch
+            optionFilterProp="children"
+            value={formValues.property_type}
+            onChange={handleSelectChangeWithSearch2}
+            onSearch={handleSelectChangeWithSearch2}
+            filterOption={(input, option) => option.children.toLowerCase().includes(input.toLowerCase())}
+
+          >
+           {neighbourhood.map((prop)=> (
+              <option key={prop.id} value={prop.id}>
+                {prop.val}
+              </option>
+            ))} 
+          </Select>
+        </Form.Item>
+
+
         <Form.Item label="Maximum nights of accommodation">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="maximum_nights"
             value={formValues.maximum_nights}
             onChange={handleInputChange}
@@ -106,7 +148,7 @@ const Models = () => {
         </Form.Item>
         <Form.Item label="Minimun nights of accommodation">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="minimum_nights"
             value={formValues.minimum_nights}
             onChange={handleInputChange}
@@ -115,7 +157,7 @@ const Models = () => {
         </Form.Item>
         <Form.Item label="Maximum number of guests">
           <Input
-            placeholder="placeholder"
+            placeholder=""
             name="accommodates"
             value={formValues.accommodates}
             onChange={handleInputChange}
@@ -137,7 +179,26 @@ const Models = () => {
             <Option value="select-4">Entire home or apartment</Option>
           </Select>
         </Form.Item>
-       
+        <Form.Item label="Property Type">
+          <Select
+
+            name="property_type"
+            placeholder="Select a property type"
+            showSearch
+            optionFilterProp="children"
+            value={formValues.property_type}
+            onChange={handleSelectChangeWithSearch}
+            onSearch={handleSelectChangeWithSearch}
+            filterOption={(input, option) => option.children.toLowerCase().includes(input.toLowerCase())}
+
+          >
+           {property_type.map((prop)=> (
+              <option key={prop.id} value={prop.id}>
+                {prop.val}
+              </option>
+            ))} 
+          </Select>
+        </Form.Item>
         <Form.Item label="Amenities">
           <Select
             name="amenities"
@@ -146,44 +207,25 @@ const Models = () => {
             value={formValues.amenities}
             onChange={handleMultipleSelectChange}
           >
-            <Option value="select-1">Kitchen</Option>
-            <Option value="select-2">Air conditioning</Option>
-            <Option value="select-3">High end electronics</Option>
-            <Option value="select-4">Barbeque</Option>
-            <Option value="select-5">Balcony</Option>
-            <Option value="select-6">Nature and views</Option>
-            <Option value="select-7">Bed linen</Option>
-            <Option value="select-8">Breakfast</Option>
-            <Option value="select-9">TV</Option>
-            <Option value="select-10">Coffee machine</Option>
-            <Option value="select-11">Cooking basics</Option>
-            <Option value="select-12">Elevator</Option>
-            <Option value="select-13">Gym</Option>
-            <Option value="select-14">Child friendly</Option>
-            <Option value="select-15">Parking</Option>
-            <Option value="select-16">Outdoor space</Option>
-            <Option value="select-17">Host greeting</Option>
-            <Option value="select-18">Hot tub sauna or pool</Option>
-            <Option value="select-19">Internet</Option>
-            <Option value="select-20">Long-term stays</Option>
-            <Option value="select-21">Pets allowed</Option>
-            <Option value="select-22">Private entrance</Option>
-            <Option value="select-23">Secure</Option>
             
+            {amenities.map((amenity)=> (
+              <option key={amenity.id} value={amenity.id}>
+                {amenity.val}
+              </option>
+            ))}
+           
           </Select>
         </Form.Item>
-        <Form.Item label="Radio groups">
-          <Radio.Group
-            name="radioField"
+        <Form.Item label="Number of bathrooms">
+          <Input
+            placeholder=""
+            name="bathrooms"
+            value={formValues.bathrooms}
             onChange={handleInputChange}
-            value={formValues.radioField}
-          >
-            <Radio value="radio-1">Radio 1</Radio>
-            <Radio value="radio-2">Radio 2</Radio>
-            <Radio value="radio-3">Radio 3</Radio>
-            <Radio value="radio-4">Radio 4</Radio>
-          </Radio.Group>
+            type='number'
+          />
         </Form.Item>
+
         <Form.Item label="Shared Bathroom">
           <Switch
             name="shared_bathroom"
@@ -196,6 +238,21 @@ const Models = () => {
             name="license"
             checked={formValues.license}
             onChange={handleSwitchChange2}
+          />
+        </Form.Item>
+
+        <Form.Item label="Availability">
+          <Switch
+            name="has_availability"
+            checked={formValues.has_availability}
+            onChange={handleSwitchChange3}
+          />
+        </Form.Item>
+        <Form.Item label="Instant Bookable">
+          <Switch
+            name="instant_bookable"
+            checked={formValues.instant_bookable}
+            onChange={handleSwitchChange4}
           />
         </Form.Item>
 
