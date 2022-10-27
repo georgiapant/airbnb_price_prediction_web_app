@@ -4,7 +4,6 @@ from flask import Blueprint, jsonify, abort, request, make_response
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from services import model_service
-
 from base_logger import logger
 
 model_api = Blueprint(
@@ -68,7 +67,7 @@ def unauthorized():
 
 
 @model_api.route('/', methods=['POST'])
-@auth.login_required
+# @auth.login_required
 def model():
     '''
     Check that all fields are filled
@@ -80,11 +79,11 @@ def model():
         logger.error(f"Id or host Id not provided. Bad request: {request.json}")
         abort(400)
         
-    if 'latitude' not in request.json or 'longitude' not in request.json:
+    if 'latitude' not in request.json["listing_info"] or 'longitude' not in request.json["listing_info"]:
         logger.error(f"Latitude or longitude not provided. Bad request: {request.json}")
         abort(400)
         
-    if 'room_type' not in request.json or 'minimum_nights' not in request.json or 'accomodates' not in request.json:               
+    if 'room_type' not in request.json["listing_info"] or 'minimum_nights' not in request.json["listing_info"] or 'accommodates' not in request.json["listing_info"]:
         logger.error(f"Room information not provided. Bad request: {request.json}")
         abort(400)
     
@@ -94,5 +93,5 @@ def model():
         abort(404)
     if result.get('error'):
         abort(500)
-
+    logger.error(result)
     return jsonify(result), 200

@@ -27,9 +27,12 @@ def not_found(error):
 def bad_request(error):
     return jsonify({"error": "Bad Request"}), 400
 
+app.config['JSON_AS_ASCII'] = False
 
 app.register_blueprint(model_controller.model_api)
 app.register_blueprint(stats_controller.api)
 
+
 if __name__ == "__main__":
+
     app.run(debug=True)
