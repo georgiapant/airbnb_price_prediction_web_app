@@ -6,7 +6,6 @@ import {
   Form,
   Input,
   Select,
-  Radio,
   Switch,
   Button,
   Divider,
@@ -29,11 +28,10 @@ const formValuesInitialState = {
   room_type: "",
   property_type:"",
   amenities: [],
-  radioField: "",
   bathrooms:"",
-  shared_bathroom: false,
+  shared_bath: false,
   license: false,
-  neighbourhood:"",
+  neighbourhood_cleansed:"",
   has_availability: false,
   instant_bookable: false
 };
@@ -54,13 +52,13 @@ const Models = () => {
     setFormValues({...formValues, property_type: value})
   };
   const handleSelectChangeWithSearch2 = (value) => {
-    setFormValues({...formValues, neighboorhoud: value})
+    setFormValues({...formValues, neighbourhood_cleansed: value})
   };
   const handleMultipleSelectChange = (value) => {
     setFormValues({ ...formValues, amenities: value });
   };
   const handleSwitchChange1 = (value) => {
-    setFormValues({ ...formValues, shared_bathroom: value});
+    setFormValues({ ...formValues, shared_bath: value});
   };
   const handleSwitchChange2 = (value) => {
     setFormValues({ ...formValues, license: value});
@@ -74,15 +72,17 @@ const Models = () => {
   const resetForm = () => {
     setFormValues(formValuesInitialState);
   };
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async(e) => {
     e.preventDefault();
     console.log(formValues);
+    const response = await makeModelsPost(formValues);
+    setModels(response.results);
 
     // Make the POST HTTP request here
     // Sample POST file api/api.js
-    makeModelsPost(formValues).then((responseData) => {
-      setModels(responseData);
-    });
+    //makeModelsPost(formValues).then((responseData) => {
+    //  setModels(responseData);
+    //});
   };
 
   return (
@@ -118,19 +118,18 @@ const Models = () => {
         <Form.Item label="Neighbourhood">
           <Select
 
-            name="neighbourhood"
-            placeholder="Select a neighbourhood"
+            name="neighbourhood_cleansed"
             showSearch
             optionFilterProp="children"
-            value={formValues.property_type}
+            value={formValues.neighbourhood_cleansed}
             onChange={handleSelectChangeWithSearch2}
             onSearch={handleSelectChangeWithSearch2}
             filterOption={(input, option) => option.children.toLowerCase().includes(input.toLowerCase())}
 
           >
-           {neighbourhood.map((prop)=> (
-              <option key={prop.id} value={prop.id}>
-                {prop.val}
+           {neighbourhood.map((props)=> (
+              <option key={props.id} value={props.id}>
+                {props.val}
               </option>
             ))} 
           </Select>
@@ -228,8 +227,8 @@ const Models = () => {
 
         <Form.Item label="Shared Bathroom">
           <Switch
-            name="shared_bathroom"
-            checked={formValues.shared_bathroom}
+            name="shared_bath"
+            checked={formValues.shared_bath}
             onChange={handleSwitchChange1}
           />
         </Form.Item>
