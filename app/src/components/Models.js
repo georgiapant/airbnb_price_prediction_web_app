@@ -19,7 +19,7 @@ const { Title } = Typography;
 const { Option } = Select;
 
 const formValuesInitialState = {
-  hostID: "",
+  host_id: "",
   latitude: "",
   longitude: "",
   maximum_nights: "",
@@ -33,7 +33,10 @@ const formValuesInitialState = {
   license: false,
   neighbourhood_cleansed:"",
   has_availability: false,
-  instant_bookable: false
+  instant_bookable: false,
+  number_of_reviews:"",
+  availability_90:""
+  
 };
 
 const Models = () => {
@@ -72,11 +75,13 @@ const Models = () => {
   const resetForm = () => {
     setFormValues(formValuesInitialState);
   };
-  const handleFormSubmit = async(e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
     console.log(formValues);
-    const response = await makeModelsPost(formValues);
-    setModels(response.results);
+    makeModelsPost(formValues).then((responseData) => {
+      setModels(responseData);
+    });
+
 
     // Make the POST HTTP request here
     // Sample POST file api/api.js
@@ -92,8 +97,8 @@ const Models = () => {
         <Form.Item label="Host ID">
           <Input
             placeholder=""
-            name="hostID"
-            value={formValues.hostID}
+            name="host_id"
+            value={formValues.host_id}
             onChange={handleInputChange}
           />
         </Form.Item>
@@ -128,7 +133,7 @@ const Models = () => {
 
           >
            {neighbourhood.map((props)=> (
-              <option key={props.id} value={props.id}>
+              <option key={props.id} value={props.val}>
                 {props.val}
               </option>
             ))} 
@@ -163,6 +168,24 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
+        <Form.Item label="Last 3 months availability">
+          <Input
+            placeholder=""
+            name="availability_90"
+            value={formValues.availability_90}
+            onChange={handleInputChange}
+            type='number'
+          />
+        </Form.Item>
+        <Form.Item label="Number of reviews">
+          <Input
+            placeholder=""
+            name="number_of_reviews"
+            value={formValues.number_of_reviews}
+            onChange={handleInputChange}
+            type='number'
+          />
+        </Form.Item>
         <Form.Item label="Room Type">
           <Select
 
@@ -172,10 +195,10 @@ const Models = () => {
             onChange={handleSelectChange}
           >
             <Option value="">Please choose room type</Option>
-            <Option value="select-1">Shared Room</Option>
-            <Option value="select-2">Private Room</Option>
-            <Option value="select-3">Hotel Room</Option>
-            <Option value="select-4">Entire home or apartment</Option>
+            <Option value="Shared Room">Shared Room</Option>
+            <Option value="Private Room">Private Room</Option>
+            <Option value="Hotel Room">Hotel Room</Option>
+            <Option value="Entire home/apt">Entire home or apartment</Option>
           </Select>
         </Form.Item>
         <Form.Item label="Property Type">
@@ -192,7 +215,7 @@ const Models = () => {
 
           >
            {property_type.map((prop)=> (
-              <option key={prop.id} value={prop.id}>
+              <option key={prop.id} value={prop.val}>
                 {prop.val}
               </option>
             ))} 
@@ -208,7 +231,7 @@ const Models = () => {
           >
             
             {amenities.map((amenity)=> (
-              <option key={amenity.id} value={amenity.id}>
+              <option key={amenity.id} value={amenity.val}>
                 {amenity.val}
               </option>
             ))}
@@ -270,8 +293,7 @@ const Models = () => {
 
       {models && (
         <div>
-          <Title level={3}>Response data</Title>
-          {JSON.stringify(models)}
+          <Title level={3}>Predicted price: {models['price']}$</Title>       
         </div>
       )}
     </Card>

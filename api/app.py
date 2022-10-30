@@ -9,9 +9,12 @@ from flask_cors import CORS
 from controllers import model_controller, stats_controller
 
 app = Flask(__name__)
+# cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 # Enabling CORS for our app
 CORS(app)
-
+# CORS(app, origins="http://127.0.0.1:5000/api/v1.0/model",
+#     allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"],
+#     supports_credentials=True)
 
 @app.errorhandler(500)
 def server_error(error):

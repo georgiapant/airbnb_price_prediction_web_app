@@ -12,18 +12,18 @@ model_api = Blueprint(
     url_prefix="/api/v1.0/model"
 )
 
-auth = HTTPBasicAuth()
+# auth = HTTPBasicAuth()
 
-users = {
-    "johndoe": generate_password_hash("johndoe"),
-    "python": generate_password_hash("my_python")
-}
+# users = {
+#     "johndoe": generate_password_hash("johndoe"),
+#     "python": generate_password_hash("my_python")
+# }
 
 
-@auth.verify_password
-def verify_password(username, password):
-    if username in users and check_password_hash(users.get(username), password):
-        return username
+# @auth.verify_password
+# def verify_password(username, password):
+#     if username in users and check_password_hash(users.get(username), password):
+#         return username
 
 @model_api.errorhandler(404)
 def not_found(error):
@@ -44,11 +44,11 @@ def forbidden(error):
     return jsonify({"error": "Internal server error. My fault"}), 403
 
 
-@auth.error_handler
-def unauthorized():
-    # return 403 instead of 401 to prevent browsers from displaying the default authy dialog,
-    # this way we can handle AUTH errors/exceptions
-    return jsonify({'error': 'Unauthorized access'}), 403
+# @auth.error_handler
+# def unauthorized():
+#     # return 403 instead of 401 to prevent browsers from displaying the default authy dialog,
+#     # this way we can handle AUTH errors/exceptions
+#     return jsonify({'error': 'Unauthorized access'}), 403
 
 
 # Model User Posts  some necessary data, we return the reponse containing 
@@ -79,11 +79,11 @@ def model():
         logger.error(f"Id or host Id not provided. Bad request: {request.json}")
         abort(400)
         
-    if 'latitude' not in request.json["listing_info"] or 'longitude' not in request.json["listing_info"]:
+    if 'latitude' not in request.json or 'longitude' not in request.json:
         logger.error(f"Latitude or longitude not provided. Bad request: {request.json}")
         abort(400)
         
-    if 'room_type' not in request.json["listing_info"] or 'minimum_nights' not in request.json["listing_info"] or 'accommodates' not in request.json["listing_info"]:
+    if 'room_type' not in request.json or 'minimum_nights' not in request.json or 'accommodates' not in request.json:
         logger.error(f"Room information not provided. Bad request: {request.json}")
         abort(400)
     
