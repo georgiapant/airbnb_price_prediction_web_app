@@ -175,3 +175,29 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 array=None.
 Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
 2022-10-31 15:37:57,099 - 127.0.0.1 - - [31/Oct/2022 15:37:57] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 15:52:28,625 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-31 15:52:28,626 - [33mPress CTRL+C to quit[0m
+2022-10-31 15:52:28,630 -  * Restarting with stat
+2022-10-31 15:52:30,587 -  * Debugger is active!
+2022-10-31 15:52:30,594 -  * Debugger PIN: 999-206-577
+2022-10-31 15:53:25,510 - 127.0.0.1 - - [31/Oct/2022 15:53:25] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 15:53:25,531 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        0                 0  ...               0                 0
+
+[1 rows x 28 columns]
+2022-10-31 15:53:25,655 - Could not preprocess data, exception: invalid literal for int() with base 10: ''
+2022-10-31 15:53:25,716 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-31 15:53:25,720 - 127.0.0.1 - - [31/Oct/2022 15:53:25] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 15:56:40,345 - 127.0.0.1 - - [31/Oct/2022 15:56:40] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 15:56:40,355 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        0                 0  ...               0                 0
+
+[1 rows x 28 columns]
+2022-10-31 15:56:40,451 - Could not preprocess data, exception: invalid literal for int() with base 10: ''
+2022-10-31 15:56:40,479 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-31 15:56:40,486 - 127.0.0.1 - - [31/Oct/2022 15:56:40] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
