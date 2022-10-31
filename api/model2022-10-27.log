@@ -1,0 +1,12 @@
+2022-10-27 14:48:55,998 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-27 14:48:56,000 - [33mPress CTRL+C to quit[0m
+2022-10-27 14:48:56,004 -  * Restarting with stat
+2022-10-27 14:48:57,434 -  * Debugger is active!
+2022-10-27 14:48:57,445 -  * Debugger PIN: 292-498-886
+2022-10-27 14:49:53,813 - 127.0.0.1 - - [27/Oct/2022 14:49:53] "GET /api/v1.0/stats/ HTTP/1.1" 200 -
+2022-10-27 15:00:39,843 - 127.0.0.1 - - [27/Oct/2022 15:00:39] "GET /api/v1.0/stats/ HTTP/1.1" 200 -
+2022-10-27 15:08:43,475 - 127.0.0.1 - - [27/Oct/2022 15:08:43] "GET /api/v1.0/stats/ HTTP/1.1" 200 -
+2022-10-27 15:08:43,588 - 127.0.0.1 - - [27/Oct/2022 15:08:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-10-27 16:15:18,056 - 127.0.0.1 - - [27/Oct/2022 16:15:18] "[33mGET /posts HTTP/1.1[0m" 404 -
+2022-10-27 16:15:18,136 - 127.0.0.1 - - [27/Oct/2022 16:15:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

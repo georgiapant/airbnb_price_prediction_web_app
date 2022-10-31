@@ -128,7 +128,7 @@ const Models = () => {
 
           >
            {neighbourhood.map((props)=> (
-              <option key={props.id} value={props.id}>
+              <option key={props.id} value={props.val}>
                 {props.val}
               </option>
             ))} 
@@ -172,10 +172,10 @@ const Models = () => {
             onChange={handleSelectChange}
           >
             <Option value="">Please choose room type</Option>
-            <Option value="select-1">Shared Room</Option>
-            <Option value="select-2">Private Room</Option>
-            <Option value="select-3">Hotel Room</Option>
-            <Option value="select-4">Entire home or apartment</Option>
+            <Option value="Shared room">Shared Room</Option>
+            <Option value="Private room">Private Room</Option>
+            <Option value="Hotel room">Hotel Room</Option>
+            <Option value="Entire home/apt">Entire home or apartment</Option>
           </Select>
         </Form.Item>
         <Form.Item label="Property Type">
@@ -192,7 +192,7 @@ const Models = () => {
 
           >
            {property_type.map((prop)=> (
-              <option key={prop.id} value={prop.id}>
+              <option key={prop.id} value={prop.val}>
                 {prop.val}
               </option>
             ))} 
@@ -208,7 +208,7 @@ const Models = () => {
           >
             
             {amenities.map((amenity)=> (
-              <option key={amenity.id} value={amenity.id}>
+              <option key={amenity.id} value={amenity.val}>
                 {amenity.val}
               </option>
             ))}
