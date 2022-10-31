@@ -1548,7 +1548,7 @@ Name: host_about, dtype: int64
 0           1     within an hour  ...              1                14
 
 [1 rows x 53 columns]
-2022-10-27 14:40:26,683 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 51}}
+2022-10-27 14:40:26,683 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 51}}
 2022-10-27 14:40:26,685 - 127.0.0.1 - - [27/Oct/2022 14:40:26] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 15:04:20,124 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1563,7 +1563,7 @@ Name: host_about, dtype: int64
 0           1     within an hour  ...              1                14
 
 [1 rows x 53 columns]
-2022-10-27 15:04:27,670 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 51}}
+2022-10-27 15:04:27,670 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 51}}
 2022-10-27 15:04:27,671 - 127.0.0.1 - - [27/Oct/2022 15:04:27] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 15:33:57,024 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1578,7 +1578,7 @@ Name: host_about, dtype: int64
 0           1     within an hour  ...              1                26
 
 [1 rows x 53 columns]
-2022-10-27 15:34:02,312 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
+2022-10-27 15:34:02,312 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
 2022-10-27 15:34:02,313 - 127.0.0.1 - - [27/Oct/2022 15:34:02] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 20:24:55,751 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1593,7 +1593,7 @@ Name: host_about, dtype: int64
 0           1     within an hour  ...              1                26
 
 [1 rows x 53 columns]
-2022-10-27 20:25:09,303 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
+2022-10-27 20:25:09,303 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
 2022-10-27 20:25:09,304 - 127.0.0.1 - - [27/Oct/2022 20:25:09] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 20:50:12,082 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1794,7 +1794,7 @@ Name: host_about, dtype: int64
 0           1     within an hour             90-99%                  0  ...                1           1               1                26
 
 [1 rows x 53 columns]
-2022-10-27 22:13:10,276 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
+2022-10-27 22:13:10,276 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
 2022-10-27 22:13:10,277 - 127.0.0.1 - - [27/Oct/2022 22:13:10] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 22:16:16,032 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1809,7 +1809,7 @@ Name: host_about, dtype: int64
 0           1     within an hour             90-99%                  0  ...                1           1               1                26
 
 [1 rows x 53 columns]
-2022-10-27 22:16:21,248 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
+2022-10-27 22:16:21,248 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 80}}
 2022-10-27 22:16:21,251 - 127.0.0.1 - - [27/Oct/2022 22:16:21] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 22:16:27,658 - 127.0.0.1 - - [27/Oct/2022 22:16:27] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
 2022-10-27 22:16:27,810 - 0    1
@@ -1818,7 +1818,7 @@ Name: host_about, dtype: int64
 0           1     within an hour             90-99%                  0  ...                1           1               1                25
 
 [1 rows x 53 columns]
-2022-10-27 22:16:28,093 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
+2022-10-27 22:16:28,093 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
 2022-10-27 22:16:28,095 - 127.0.0.1 - - [27/Oct/2022 22:16:28] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 22:20:05,071 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1848,7 +1848,7 @@ Name: host_about, dtype: int64
 0           1     within an hour             90-99%                  0  ...                1           1               1                25
 
 [1 rows x 53 columns]
-2022-10-27 22:40:31,470 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
+2022-10-27 22:40:31,470 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
 2022-10-27 22:40:31,472 - 127.0.0.1 - - [27/Oct/2022 22:40:31] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-27 23:11:06,215 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1865,5 +1865,5 @@ Name: host_about, dtype: int64
 0           1     within an hour             90-99%                  0  ...                1           1               1                25
 
 [1 rows x 53 columns]
-2022-10-27 23:12:48,766 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
+2022-10-27 23:12:48,766 - {'listing_info': {'host_id': 640163, 'number_of_reviews': 10, 'neighbourhood_cleansed': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 77}}
 2022-10-27 23:12:48,767 - 127.0.0.1 - - [27/Oct/2022 23:12:48] "POST /api/v1.0/model/ HTTP/1.1" 200 -

@@ -5,7 +5,7 @@
 2022-10-25 13:49:46,834 -  * Debugger is active!
 2022-10-25 13:49:46,841 -  * Debugger PIN: 128-792-573
 2022-10-25 13:49:51,851 - 127.0.0.1 - - [25/Oct/2022 13:49:51] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 13:49:51,880 - 0    ÃÊÕÆÇ
+2022-10-25 13:49:51,880 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 13:49:51,937 - 0    1
 Name: event_suitable, dtype: int32
@@ -21,7 +21,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 13:50:47,512 -  * Debugger is active!
 2022-10-25 13:50:47,516 -  * Debugger PIN: 128-792-573
 2022-10-25 13:50:49,857 - 127.0.0.1 - - [25/Oct/2022 13:50:49] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 13:50:49,867 - 0    ÃÊÕÆÇ
+2022-10-25 13:50:49,867 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 13:50:49,901 - 0    1
 Name: event_suitable, dtype: int32
@@ -37,7 +37,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 13:51:20,674 -  * Debugger is active!
 2022-10-25 13:51:20,681 -  * Debugger PIN: 128-792-573
 2022-10-25 13:51:26,415 - 127.0.0.1 - - [25/Oct/2022 13:51:26] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 13:51:26,423 - 0    ÃÊÕÆÇ
+2022-10-25 13:51:26,423 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 13:51:26,459 - 0    1
 Name: event_suitable, dtype: int32
@@ -57,7 +57,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 13:53:46,863 -  * Debugger is active!
 2022-10-25 13:53:46,863 -  * Debugger PIN: 128-792-573
 2022-10-25 13:53:49,813 - 127.0.0.1 - - [25/Oct/2022 13:53:49] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 13:53:49,822 - 0    ÃÊÕÆÇ
+2022-10-25 13:53:49,822 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 13:53:49,854 - 0    1
 Name: event_suitable, dtype: int32
@@ -67,7 +67,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 13:53:49,878 - Could not predict price 'NoneType' object is not subscriptable
 2022-10-25 13:53:49,878 - 127.0.0.1 - - [25/Oct/2022 13:53:49] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
 2022-10-25 13:55:08,898 - 127.0.0.1 - - [25/Oct/2022 13:55:08] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 13:55:08,906 - 0    ÃÊÕÆÇ
+2022-10-25 13:55:08,906 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 13:55:08,915 - 0    1
 Name: event_suitable, dtype: int32
@@ -95,7 +95,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 15:54:33,124 -  * Debugger is active!
 2022-10-25 15:54:33,140 -  * Debugger PIN: 128-792-573
 2022-10-25 15:54:36,399 - 127.0.0.1 - - [25/Oct/2022 15:54:36] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 15:54:36,425 - 0    ÃÊÕÆÇ
+2022-10-25 15:54:36,425 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 15:54:36,466 - 0    1
 Name: event_suitable, dtype: int32
@@ -111,7 +111,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 15:58:08,182 -  * Debugger is active!
 2022-10-25 15:58:08,182 -  * Debugger PIN: 128-792-573
 2022-10-25 15:58:14,141 - 127.0.0.1 - - [25/Oct/2022 15:58:14] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 15:58:14,148 - 0    ÃÊÕÆÇ
+2022-10-25 15:58:14,148 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 15:58:14,180 - 0    1
 Name: event_suitable, dtype: int32
@@ -127,7 +127,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 15:59:46,628 -  * Debugger is active!
 2022-10-25 15:59:46,628 -  * Debugger PIN: 128-792-573
 2022-10-25 15:59:48,775 - 127.0.0.1 - - [25/Oct/2022 15:59:48] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 15:59:48,784 - 0    ÃÊÕÆÇ
+2022-10-25 15:59:48,784 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 15:59:48,815 - 0    1
 Name: event_suitable, dtype: int32
@@ -137,7 +137,7 @@ Name: amenities_number, dtype: int64
 0  52.36435    4.94358  ...              1                14
 
 [1 rows x 44 columns]
-2022-10-25 15:59:48,899 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 15:59:48,899 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 15:59:48,900 - 127.0.0.1 - - [25/Oct/2022 15:59:48] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:02:55,566 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -146,7 +146,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:02:56,849 -  * Debugger is active!
 2022-10-25 16:02:56,865 -  * Debugger PIN: 128-792-573
 2022-10-25 16:02:58,514 - 127.0.0.1 - - [25/Oct/2022 16:02:58] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:02:58,526 - 0    ÃÊÕÆÇ
+2022-10-25 16:02:58,526 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:02:58,559 - 0    1
 Name: event_suitable, dtype: int32
@@ -156,7 +156,7 @@ Name: amenities_number, dtype: int64
 0  52.36435    4.94358  ...              1                14
 
 [1 rows x 44 columns]
-2022-10-25 16:02:58,628 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:02:58,628 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:02:58,628 - 127.0.0.1 - - [25/Oct/2022 16:02:58] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:03:23,776 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -165,7 +165,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:03:25,188 -  * Debugger is active!
 2022-10-25 16:03:25,204 -  * Debugger PIN: 128-792-573
 2022-10-25 16:03:28,051 - 127.0.0.1 - - [25/Oct/2022 16:03:28] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:03:28,059 - 0    ÃÊÕÆÇ
+2022-10-25 16:03:28,059 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:03:28,101 - 0    1
 Name: event_suitable, dtype: int32
@@ -181,7 +181,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:04:00,648 -  * Debugger is active!
 2022-10-25 16:04:00,655 -  * Debugger PIN: 128-792-573
 2022-10-25 16:04:02,415 - 127.0.0.1 - - [25/Oct/2022 16:04:02] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:04:02,423 - 0    ÃÊÕÆÇ
+2022-10-25 16:04:02,423 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:04:02,459 - 0    1
 Name: event_suitable, dtype: int32
@@ -191,7 +191,7 @@ Name: amenities_number, dtype: int64
 0  52.36435    4.94358  ...              1                14
 
 [1 rows x 44 columns]
-2022-10-25 16:04:02,572 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:04:02,572 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:04:02,572 - 127.0.0.1 - - [25/Oct/2022 16:04:02] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:04:33,384 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -200,7 +200,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:04:34,682 -  * Debugger is active!
 2022-10-25 16:04:34,698 -  * Debugger PIN: 128-792-573
 2022-10-25 16:04:39,336 - 127.0.0.1 - - [25/Oct/2022 16:04:39] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:04:39,345 - 0    ÃÊÕÆÇ
+2022-10-25 16:04:39,345 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:04:39,377 - 0    1
 Name: event_suitable, dtype: int32
@@ -216,7 +216,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:05:17,061 -  * Debugger is active!
 2022-10-25 16:05:17,061 -  * Debugger PIN: 128-792-573
 2022-10-25 16:05:19,128 - 127.0.0.1 - - [25/Oct/2022 16:05:19] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:05:19,136 - 0    ÃÊÕÆÇ
+2022-10-25 16:05:19,136 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:05:19,175 - 0    1
 Name: event_suitable, dtype: int32
@@ -233,7 +233,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:06:04,337 -  * Debugger is active!
 2022-10-25 16:06:04,337 -  * Debugger PIN: 128-792-573
 2022-10-25 16:06:48,746 - 127.0.0.1 - - [25/Oct/2022 16:06:48] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:06:48,782 - 0    ÃÊÕÆÇ
+2022-10-25 16:06:48,782 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:06:48,788 - 0    1
 Name: event_suitable, dtype: int32
@@ -245,7 +245,7 @@ Name: amenities_number, dtype: int64
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:06:48,907 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:06:48,907 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:06:48,907 - 127.0.0.1 - - [25/Oct/2022 16:06:48] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:08:39,612 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
 2022-10-25 16:08:39,745 -  * Restarting with stat
@@ -258,7 +258,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:09:14,636 -  * Debugger is active!
 2022-10-25 16:09:14,651 -  * Debugger PIN: 128-792-573
 2022-10-25 16:09:20,336 - 127.0.0.1 - - [25/Oct/2022 16:09:20] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:09:20,344 - 0    ÃÊÕÆÇ
+2022-10-25 16:09:20,344 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:09:20,381 - 0    1
 Name: event_suitable, dtype: int32
@@ -270,7 +270,7 @@ Name: amenities_number, dtype: int64
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:09:20,488 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:09:20,488 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:09:20,489 - 127.0.0.1 - - [25/Oct/2022 16:09:20] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:11:35,209 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -279,20 +279,21 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:11:36,443 -  * Debugger is active!
 2022-10-25 16:11:36,443 -  * Debugger PIN: 128-792-573
 2022-10-25 16:11:39,406 - 127.0.0.1 - - [25/Oct/2022 16:11:39] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:11:39,420 - 0    ÃÊÕÆÇ
+2022-10-25 16:11:39,420 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:11:39,454 - 0    1
 Name: event_suitable, dtype: int32
 2022-10-25 16:11:39,455 - 0    14
 Name: amenities_number, dtype: int64
-2022-10-25 16:11:39,485 - Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.
+2022-10-25 16:11:39,485 - Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.
+
 
 2022-10-25 16:11:39,487 -    latitude  longitude  ... event_suitable  amenities_number
 0  52.36435    4.94358  ...            NaN               NaN
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:11:39,577 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:11:39,577 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:11:39,577 - 127.0.0.1 - - [25/Oct/2022 16:11:39] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:11:53,893 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -301,20 +302,21 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:11:55,112 -  * Debugger is active!
 2022-10-25 16:11:55,112 -  * Debugger PIN: 128-792-573
 2022-10-25 16:11:58,046 - 127.0.0.1 - - [25/Oct/2022 16:11:58] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:11:58,054 - 0    ÃÊÕÆÇ
+2022-10-25 16:11:58,054 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:11:58,092 - 0    1
 Name: event_suitable, dtype: int32
 2022-10-25 16:11:58,093 - 0    14
 Name: amenities_number, dtype: int64
-2022-10-25 16:11:58,114 - Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.
+2022-10-25 16:11:58,114 - Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.
+
 
 2022-10-25 16:11:58,116 -    latitude  longitude  ... event_suitable  amenities_number
 0  52.36435    4.94358  ...            NaN               NaN
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:11:58,198 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:11:58,198 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:11:58,199 - 127.0.0.1 - - [25/Oct/2022 16:11:58] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:12:31,978 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -323,7 +325,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:12:33,233 -  * Debugger is active!
 2022-10-25 16:12:33,233 -  * Debugger PIN: 128-792-573
 2022-10-25 16:12:35,574 - 127.0.0.1 - - [25/Oct/2022 16:12:35] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:12:35,585 - 0    ÃÊÕÆÇ
+2022-10-25 16:12:35,585 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:12:35,621 - 0    1
 Name: event_suitable, dtype: int32
@@ -335,7 +337,7 @@ Name: amenities_number, dtype: int64
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:12:35,738 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:12:35,738 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:12:35,738 - 127.0.0.1 - - [25/Oct/2022 16:12:35] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:13:14,450 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -344,7 +346,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:13:15,721 -  * Debugger is active!
 2022-10-25 16:13:15,721 -  * Debugger PIN: 128-792-573
 2022-10-25 16:13:18,348 - 127.0.0.1 - - [25/Oct/2022 16:13:18] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:13:18,355 - 0    ÃÊÕÆÇ
+2022-10-25 16:13:18,355 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:13:18,391 - 0    1
 Name: event_suitable, dtype: int32
@@ -356,7 +358,7 @@ Name: amenities_number, dtype: int64
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:13:18,494 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:13:18,494 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:13:18,494 - 127.0.0.1 - - [25/Oct/2022 16:13:18] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:14:02,516 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -365,7 +367,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:14:03,924 -  * Debugger is active!
 2022-10-25 16:14:03,940 -  * Debugger PIN: 128-792-573
 2022-10-25 16:14:12,005 - 127.0.0.1 - - [25/Oct/2022 16:14:12] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:14:12,011 - 0    ÃÊÕÆÇ
+2022-10-25 16:14:12,011 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:14:12,042 - 0    1
 Name: event_suitable, dtype: int32
@@ -377,7 +379,7 @@ Name: amenities_number, dtype: int64
 0       NaN        NaN  ...            1.0              14.0
 
 [2 rows x 44 columns]
-2022-10-25 16:14:12,148 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:14:12,148 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:14:12,149 - 127.0.0.1 - - [25/Oct/2022 16:14:12] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:16:15,203 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -386,7 +388,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:16:16,506 -  * Debugger is active!
 2022-10-25 16:16:16,528 -  * Debugger PIN: 128-792-573
 2022-10-25 16:16:18,451 - 127.0.0.1 - - [25/Oct/2022 16:16:18] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:16:18,459 - 0    ÃÊÕÆÇ
+2022-10-25 16:16:18,459 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:16:18,499 - 0    1
 Name: event_suitable, dtype: int32
@@ -403,7 +405,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:18:57,369 -  * Debugger is active!
 2022-10-25 16:18:57,377 -  * Debugger PIN: 128-792-573
 2022-10-25 16:18:59,799 - 127.0.0.1 - - [25/Oct/2022 16:18:59] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:18:59,809 - 0    ÃÊÕÆÇ
+2022-10-25 16:18:59,809 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:18:59,860 - 0    1
 Name: event_suitable, dtype: int32
@@ -415,7 +417,7 @@ Name: amenities_number, dtype: int64
 0       NaN  ...                             6.0
 
 [3 rows x 52 columns]
-2022-10-25 16:19:00,163 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:19:00,163 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:19:00,164 - 127.0.0.1 - - [25/Oct/2022 16:19:00] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:20:06,801 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -424,7 +426,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:20:08,267 -  * Debugger is active!
 2022-10-25 16:20:08,267 -  * Debugger PIN: 128-792-573
 2022-10-25 16:20:10,265 - 127.0.0.1 - - [25/Oct/2022 16:20:10] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:20:10,271 - 0    ÃÊÕÆÇ
+2022-10-25 16:20:10,271 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:20:10,304 - 0    1
 Name: event_suitable, dtype: int32
@@ -436,7 +438,7 @@ Name: amenities_number, dtype: int64
 0       NaN  ...                             6.0
 
 [3 rows x 52 columns]
-2022-10-25 16:20:10,487 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 16:20:10,487 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 16:20:10,488 - 127.0.0.1 - - [25/Oct/2022 16:20:10] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 16:22:29,281 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -445,7 +447,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:22:30,587 -  * Debugger is active!
 2022-10-25 16:22:30,603 -  * Debugger PIN: 128-792-573
 2022-10-25 16:22:33,970 - 127.0.0.1 - - [25/Oct/2022 16:22:33] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:22:33,984 - 0    ÃÊÕÆÇ
+2022-10-25 16:22:33,984 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:22:34,017 - 0    1
 Name: event_suitable, dtype: int32
@@ -468,7 +470,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:25:35,642 -  * Debugger is active!
 2022-10-25 16:25:35,657 -  * Debugger PIN: 128-792-573
 2022-10-25 16:25:40,069 - 127.0.0.1 - - [25/Oct/2022 16:25:40] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:25:40,096 - 0    ÃÊÕÆÇ
+2022-10-25 16:25:40,096 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:25:40,114 - 0    1
 Name: event_suitable, dtype: int32
@@ -495,7 +497,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:29:09,744 -  * Debugger is active!
 2022-10-25 16:29:09,744 -  * Debugger PIN: 128-792-573
 2022-10-25 16:30:29,098 - 127.0.0.1 - - [25/Oct/2022 16:30:29] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:30:29,150 - 0    ÃÊÕÆÇ
+2022-10-25 16:30:29,150 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:30:29,165 - 0    1
 Name: event_suitable, dtype: int32
@@ -524,7 +526,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:39:47,462 -  * Debugger is active!
 2022-10-25 16:39:47,476 -  * Debugger PIN: 128-792-573
 2022-10-25 16:39:51,069 - 127.0.0.1 - - [25/Oct/2022 16:39:51] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:39:51,078 - 0    ÃÊÕÆÇ
+2022-10-25 16:39:51,078 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:39:51,109 - 0    1
 Name: event_suitable, dtype: int32
@@ -553,7 +555,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:41:19,661 -  * Debugger is active!
 2022-10-25 16:41:19,661 -  * Debugger PIN: 128-792-573
 2022-10-25 16:41:21,189 - 127.0.0.1 - - [25/Oct/2022 16:41:21] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:41:21,195 - 0    ÃÊÕÆÇ
+2022-10-25 16:41:21,195 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:41:21,236 - 0    1
 Name: event_suitable, dtype: int32
@@ -582,7 +584,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 16:45:32,935 -  * Debugger is active!
 2022-10-25 16:45:32,950 -  * Debugger PIN: 128-792-573
 2022-10-25 16:45:37,902 - 127.0.0.1 - - [25/Oct/2022 16:45:37] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 16:45:37,911 - 0    ÃÊÕÆÇ
+2022-10-25 16:45:37,911 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 16:45:37,997 - 0    1
 Name: event_suitable, dtype: int32
@@ -611,7 +613,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 17:00:59,301 -  * Debugger is active!
 2022-10-25 17:00:59,312 -  * Debugger PIN: 128-792-573
 2022-10-25 17:01:02,132 - 127.0.0.1 - - [25/Oct/2022 17:01:02] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 17:01:02,165 - 0    ÃÊÕÆÇ
+2022-10-25 17:01:02,165 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 17:01:02,227 - 0    1
 Name: event_suitable, dtype: int32
@@ -644,7 +646,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 17:13:16,690 -  * Debugger is active!
 2022-10-25 17:13:16,703 -  * Debugger PIN: 128-792-573
 2022-10-25 17:13:18,588 - 127.0.0.1 - - [25/Oct/2022 17:13:18] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 17:13:18,608 - 0    ÃÊÕÆÇ
+2022-10-25 17:13:18,608 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 17:13:18,623 - 0    1
 Name: event_suitable, dtype: int32
@@ -665,7 +667,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 17:13:39,781 -  * Debugger is active!
 2022-10-25 17:13:39,802 -  * Debugger PIN: 128-792-573
 2022-10-25 17:13:40,277 - 127.0.0.1 - - [25/Oct/2022 17:13:40] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 17:13:40,287 - 0    ÃÊÕÆÇ
+2022-10-25 17:13:40,287 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 17:13:40,301 - 0    1
 Name: event_suitable, dtype: int32
@@ -686,7 +688,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 17:14:02,395 -  * Debugger is active!
 2022-10-25 17:14:02,404 -  * Debugger PIN: 128-792-573
 2022-10-25 17:14:03,350 - 127.0.0.1 - - [25/Oct/2022 17:14:03] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 17:14:03,362 - 0    ÃÊÕÆÇ
+2022-10-25 17:14:03,362 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 17:14:03,370 - 0    1
 Name: event_suitable, dtype: int32
@@ -711,7 +713,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 22:18:15,171 -  * Debugger is active!
 2022-10-25 22:18:15,215 -  * Debugger PIN: 128-792-573
 2022-10-25 22:20:03,968 - 127.0.0.1 - - [25/Oct/2022 22:20:03] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 22:20:03,996 - 0    ÃÊÕÆÇ
+2022-10-25 22:20:03,996 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 22:20:04,010 - 0    1
 Name: event_suitable, dtype: int32
@@ -748,7 +750,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 22:25:38,149 -  * Debugger is active!
 2022-10-25 22:25:38,164 -  * Debugger PIN: 128-792-573
 2022-10-25 22:25:53,815 - 127.0.0.1 - - [25/Oct/2022 22:25:53] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 22:25:53,829 - 0    ÃÊÕÆÇ
+2022-10-25 22:25:53,829 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 22:25:53,838 - 0    1
 Name: event_suitable, dtype: int32
@@ -777,7 +779,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 22:26:15,439 -  * Debugger is active!
 2022-10-25 22:26:15,439 -  * Debugger PIN: 128-792-573
 2022-10-25 22:26:18,830 - 127.0.0.1 - - [25/Oct/2022 22:26:18] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 22:26:18,840 - 0    ÃÊÕÆÇ
+2022-10-25 22:26:18,840 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 22:26:18,846 - 0    1
 Name: event_suitable, dtype: int32
@@ -798,7 +800,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 22:43:50,826 -  * Debugger is active!
 2022-10-25 22:43:50,826 -  * Debugger PIN: 128-792-573
 2022-10-25 22:44:00,454 - 127.0.0.1 - - [25/Oct/2022 22:44:00] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 22:44:00,470 - 0    ÃÊÕÆÇ
+2022-10-25 22:44:00,470 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 22:44:00,483 - 0    1
 Name: event_suitable, dtype: int32
@@ -827,7 +829,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:10:11,386 -  * Debugger is active!
 2022-10-25 23:10:11,402 -  * Debugger PIN: 125-948-830
 2022-10-25 23:10:15,960 - 127.0.0.1 - - [25/Oct/2022 23:10:15] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:10:15,986 - 0    ÃÊÕÆÇ
+2022-10-25 23:10:15,986 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:10:16,003 - 0    1
 Name: event_suitable, dtype: int32
@@ -848,7 +850,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:11:20,449 -  * Debugger is active!
 2022-10-25 23:11:20,451 -  * Debugger PIN: 125-948-830
 2022-10-25 23:12:02,316 - 127.0.0.1 - - [25/Oct/2022 23:12:02] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:12:02,325 - 0    ÃÊÕÆÇ
+2022-10-25 23:12:02,325 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:12:02,334 - 0    1
 Name: event_suitable, dtype: int32
@@ -860,7 +862,7 @@ Name: amenities_number, dtype: int64
 0       NaN  ...                             6.0
 
 [3 rows x 52 columns]
-2022-10-25 23:12:02,726 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 23:12:02,726 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 23:12:02,727 - 127.0.0.1 - - [25/Oct/2022 23:12:02] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 23:13:37,661 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\venv\\lib\\site-packages\\sklearn\\__init__.py', reloading
 2022-10-25 23:13:37,915 -  * Restarting with stat
@@ -873,7 +875,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:15:11,968 -  * Debugger is active!
 2022-10-25 23:15:11,978 -  * Debugger PIN: 125-948-830
 2022-10-25 23:15:15,220 - 127.0.0.1 - - [25/Oct/2022 23:15:15] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:15:15,265 - 0    ÃÊÕÆÇ
+2022-10-25 23:15:15,265 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:15:15,293 - 0    1
 Name: event_suitable, dtype: int32
@@ -885,7 +887,7 @@ Name: amenities_number, dtype: int64
 0       NaN  ...                             6.0
 
 [3 rows x 52 columns]
-2022-10-25 23:15:15,555 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ÃÊÕÆÇ', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
+2022-10-25 23:15:15,555 - {'listing_info': {'host_id': 37177, 'number_of_reviews': 10, 'neighbourhood': 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'room_type': 'Private room'}, 'prediction': {'price': 10}}
 2022-10-25 23:15:15,555 - 127.0.0.1 - - [25/Oct/2022 23:15:15] "POST /api/v1.0/model/ HTTP/1.1" 200 -
 2022-10-25 23:17:25,129 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -894,7 +896,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:17:26,863 -  * Debugger is active!
 2022-10-25 23:17:26,863 -  * Debugger PIN: 125-948-830
 2022-10-25 23:17:29,617 - 127.0.0.1 - - [25/Oct/2022 23:17:29] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:17:29,631 - 0    ÃÊÕÆÇ
+2022-10-25 23:17:29,631 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:17:29,637 - 0    1
 Name: event_suitable, dtype: int32
@@ -909,7 +911,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:17:29,817 - Could not predict price columns are missing: {'shared_bath', 'accommodates', 'host_identity_verified', 'host_has_profile_pic', 'availability_90'}
 2022-10-25 23:17:29,819 - 127.0.0.1 - - [25/Oct/2022 23:17:29] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
 2022-10-25 23:18:56,723 - 127.0.0.1 - - [25/Oct/2022 23:18:56] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:18:56,733 - 0    ÃÊÕÆÇ
+2022-10-25 23:18:56,733 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:18:56,739 - 0    1
 Name: event_suitable, dtype: int32
@@ -932,7 +934,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:21:07,732 -  * Debugger is active!
 2022-10-25 23:21:07,752 -  * Debugger PIN: 125-948-830
 2022-10-25 23:21:12,919 - 127.0.0.1 - - [25/Oct/2022 23:21:12] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:21:12,934 - 0    ÃÊÕÆÇ
+2022-10-25 23:21:12,934 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:21:12,944 - 0    1
 Name: event_suitable, dtype: int32
@@ -947,7 +949,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:21:13,128 - Could not predict price columns are missing: {'shared_bath', 'accommodates', 'host_has_profile_pic', 'host_identity_verified', 'availability_90'}
 2022-10-25 23:21:13,128 - 127.0.0.1 - - [25/Oct/2022 23:21:13] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
 2022-10-25 23:21:24,752 - 127.0.0.1 - - [25/Oct/2022 23:21:24] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:21:24,758 - 0    ÃÊÕÆÇ
+2022-10-25 23:21:24,758 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:21:24,763 - Could not preprocess data, exception: 'shared_bathroom'
 2022-10-25 23:21:24,771 - Could not predict price Expected 2D array, got scalar array instead:
@@ -961,7 +963,7 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 2022-10-25 23:21:45,208 -  * Debugger is active!
 2022-10-25 23:21:45,218 -  * Debugger PIN: 125-948-830
 2022-10-25 23:21:51,845 - 127.0.0.1 - - [25/Oct/2022 23:21:51] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:21:51,852 - 0    ÃÊÕÆÇ
+2022-10-25 23:21:51,852 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:21:51,860 - Could not preprocess data, exception: 'shared_bathroom'
 2022-10-25 23:21:51,885 - Could not predict price Expected 2D array, got scalar array instead:
@@ -979,7 +981,7 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 2022-10-25 23:23:01,795 -  * Debugger is active!
 2022-10-25 23:23:01,807 -  * Debugger PIN: 125-948-830
 2022-10-25 23:23:03,160 - 127.0.0.1 - - [25/Oct/2022 23:23:03] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:23:03,175 - 0    ÃÊÕÆÇ
+2022-10-25 23:23:03,175 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:23:03,192 - 0    1
 Name: event_suitable, dtype: int32
@@ -1000,7 +1002,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:26:48,101 -  * Debugger is active!
 2022-10-25 23:26:48,110 -  * Debugger PIN: 125-948-830
 2022-10-25 23:26:50,474 - 127.0.0.1 - - [25/Oct/2022 23:26:50] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:26:50,483 - 0    ÃÊÕÆÇ
+2022-10-25 23:26:50,483 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:26:50,493 - 0    1
 Name: event_suitable, dtype: int32
@@ -1021,7 +1023,7 @@ Name: amenities_number, dtype: int64
 2022-10-25 23:28:27,425 -  * Debugger is active!
 2022-10-25 23:28:27,431 -  * Debugger PIN: 125-948-830
 2022-10-25 23:28:28,540 - 127.0.0.1 - - [25/Oct/2022 23:28:28] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
-2022-10-25 23:28:28,555 - 0    ÃÊÕÆÇ
+2022-10-25 23:28:28,555 - 0    ï¿½ï¿½ï¿½ï¿½ï¿½
 Name: neighbourhood, dtype: object
 2022-10-25 23:28:28,556 - 0    1
 Name: event_suitable, dtype: int32

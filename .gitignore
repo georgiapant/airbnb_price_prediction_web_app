@@ -1,6 +1,7 @@
-Resources/3012.pdf
 .DS_Store
 model2022-10-15.log
-.gitignore
 task2022-10-15.log
 app/node_modules
+model*
+.vscode
+api/.idea
