@@ -4,3 +4,4 @@ task2022-10-15.log
 app/node_modules
 model*
 .vscode
+api/.idea
