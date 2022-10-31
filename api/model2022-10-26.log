@@ -1,0 +1,840 @@
+2022-10-26 11:16:49,652 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:16:49,652 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:16:49,652 -  * Restarting with stat
+2022-10-26 11:16:51,518 -  * Debugger is active!
+2022-10-26 11:16:51,586 -  * Debugger PIN: 125-948-830
+2022-10-26 11:16:55,857 - 127.0.0.1 - - [26/Oct/2022 11:16:55] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:16:55,932 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        1                 0  ...               1                14
+
+[1 rows x 28 columns]
+2022-10-26 11:16:56,062 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 11:16:56,291 - Could not predict price could not convert string to float: 'Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.\r\n'
+2022-10-26 11:16:56,294 - 127.0.0.1 - - [26/Oct/2022 11:16:56] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:20:15,332 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:20:15,332 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:20:15,332 -  * Restarting with stat
+2022-10-26 11:20:17,318 -  * Debugger is active!
+2022-10-26 11:20:17,332 -  * Debugger PIN: 125-948-830
+2022-10-26 11:20:21,632 - 127.0.0.1 - - [26/Oct/2022 11:20:21] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:20:21,645 - 0    2
+Name: neighbourhood_cleansed_group, dtype: object
+2022-10-26 11:20:21,689 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 11:20:21,971 - Could not predict price could not convert string to float: 'Athens Quality Apartments is a company started back at 2007 and now we have 8 apartments. Our goal is to offer to travelers beautiful apartments with professional service only in good location and with all the necessary amenities.\r\n'
+2022-10-26 11:20:21,972 - 127.0.0.1 - - [26/Oct/2022 11:20:21] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:21:37,792 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 11:21:38,216 -  * Restarting with stat
+2022-10-26 11:21:41,912 -  * Debugger is active!
+2022-10-26 11:21:41,912 -  * Debugger PIN: 125-948-830
+2022-10-26 11:24:23,522 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:24:23,522 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:24:23,527 -  * Restarting with stat
+2022-10-26 11:24:25,516 -  * Debugger is active!
+2022-10-26 11:24:25,525 -  * Debugger PIN: 125-948-830
+2022-10-26 11:24:26,687 - 127.0.0.1 - - [26/Oct/2022 11:24:26] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:24:26,729 - Could not preprocess data, exception: 'Series' object has no attribute 'applymap'
+2022-10-26 11:24:26,746 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 11:24:26,747 - 127.0.0.1 - - [26/Oct/2022 11:24:26] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:26:41,081 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:26:41,081 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:26:41,092 -  * Restarting with stat
+2022-10-26 11:26:42,897 -  * Debugger is active!
+2022-10-26 11:26:42,903 -  * Debugger PIN: 125-948-830
+2022-10-26 11:26:43,783 - 127.0.0.1 - - [26/Oct/2022 11:26:43] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:26:43,826 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 11:26:43,956 - Could not predict price could not convert string to float: 't'
+2022-10-26 11:26:43,958 - 127.0.0.1 - - [26/Oct/2022 11:26:43] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:29:25,889 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 11:29:26,265 -  * Restarting with stat
+2022-10-26 11:29:28,350 -  * Debugger is active!
+2022-10-26 11:29:28,355 -  * Debugger PIN: 125-948-830
+2022-10-26 11:29:44,854 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:29:44,855 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:29:44,857 -  * Restarting with stat
+2022-10-26 11:29:47,554 -  * Debugger is active!
+2022-10-26 11:29:47,567 -  * Debugger PIN: 125-948-830
+2022-10-26 11:29:49,159 - 127.0.0.1 - - [26/Oct/2022 11:29:49] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:29:49,221 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 11:29:49,355 - Could not predict price could not convert string to float: 't'
+2022-10-26 11:29:49,357 - 127.0.0.1 - - [26/Oct/2022 11:29:49] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:30:32,415 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 11:30:32,695 -  * Restarting with stat
+2022-10-26 11:30:34,662 -  * Debugger is active!
+2022-10-26 11:30:34,669 -  * Debugger PIN: 125-948-830
+2022-10-26 11:30:53,389 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 11:30:53,555 -  * Restarting with stat
+2022-10-26 11:30:55,510 -  * Debugger is active!
+2022-10-26 11:30:55,514 -  * Debugger PIN: 125-948-830
+2022-10-26 11:32:05,209 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:32:05,209 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:32:05,214 -  * Restarting with stat
+2022-10-26 11:32:06,870 -  * Debugger is active!
+2022-10-26 11:32:06,875 -  * Debugger PIN: 125-948-830
+2022-10-26 11:32:09,040 - 127.0.0.1 - - [26/Oct/2022 11:32:09] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:32:09,106 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:32:09,260 - Could not predict price 'neighbourhood'
+2022-10-26 11:32:09,261 - 127.0.0.1 - - [26/Oct/2022 11:32:09] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:39:22,193 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:39:22,193 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:39:22,204 -  * Restarting with stat
+2022-10-26 11:39:24,646 -  * Debugger is active!
+2022-10-26 11:39:24,660 -  * Debugger PIN: 125-948-830
+2022-10-26 11:39:24,806 - 127.0.0.1 - - [26/Oct/2022 11:39:24] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:39:24,881 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:39:25,052 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 11:39:25,053 - 127.0.0.1 - - [26/Oct/2022 11:39:25] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:58:29,253 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:58:29,253 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:58:29,253 -  * Restarting with stat
+2022-10-26 11:58:31,120 -  * Debugger is active!
+2022-10-26 11:58:31,130 -  * Debugger PIN: 125-948-830
+2022-10-26 11:58:32,983 - 127.0.0.1 - - [26/Oct/2022 11:58:32] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:58:33,094 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:58:33,213 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:58:33,771 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 11:58:33,772 - 127.0.0.1 - - [26/Oct/2022 11:58:33] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 11:59:23,843 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 11:59:23,843 - [33mPress CTRL+C to quit[0m
+2022-10-26 11:59:23,848 -  * Restarting with stat
+2022-10-26 11:59:25,473 -  * Debugger is active!
+2022-10-26 11:59:25,483 -  * Debugger PIN: 125-948-830
+2022-10-26 11:59:29,493 - 127.0.0.1 - - [26/Oct/2022 11:59:29] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 11:59:29,560 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:59:29,705 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 11:59:29,903 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 11:59:29,904 - 127.0.0.1 - - [26/Oct/2022 11:59:29] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:00:51,523 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:00:51,523 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:00:51,523 -  * Restarting with stat
+2022-10-26 12:00:53,158 -  * Debugger is active!
+2022-10-26 12:00:53,163 -  * Debugger PIN: 125-948-830
+2022-10-26 12:00:54,647 - 127.0.0.1 - - [26/Oct/2022 12:00:54] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:00:54,686 - Could not preprocess data, exception: module 'logging' has no attribute 'eroor'
+2022-10-26 12:00:54,687 - None
+2022-10-26 12:00:54,702 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 12:00:54,703 - 127.0.0.1 - - [26/Oct/2022 12:00:54] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:01:48,653 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:01:48,653 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:01:48,653 -  * Restarting with stat
+2022-10-26 12:01:50,590 -  * Debugger is active!
+2022-10-26 12:01:50,599 -  * Debugger PIN: 125-948-830
+2022-10-26 12:01:50,798 - 127.0.0.1 - - [26/Oct/2022 12:01:50] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:01:50,856 -    Unnamed: 0  host_id  ... host_identity_verified host_has_profile_pic
+0           0    37177  ...                      t                    t
+
+[1 rows x 10 columns]
+2022-10-26 12:01:50,902 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:01:51,006 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:01:51,181 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:01:51,182 - 127.0.0.1 - - [26/Oct/2022 12:01:51] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:08:37,322 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:08:37,322 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:08:37,333 -  * Restarting with stat
+2022-10-26 12:08:39,142 -  * Debugger is active!
+2022-10-26 12:08:39,151 -  * Debugger PIN: 125-948-830
+2022-10-26 12:08:41,019 - 127.0.0.1 - - [26/Oct/2022 12:08:41] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:08:41,083 -    Unnamed: 0  host_id  ... host_identity_verified host_has_profile_pic
+0           0    37177  ...                      t                    t
+
+[1 rows x 10 columns]
+2022-10-26 12:08:41,115 - Could not preprocess data, exception: "None of [Int64Index([1], dtype='int64')] are in the [index]"
+2022-10-26 12:08:41,116 - None
+2022-10-26 12:08:41,154 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 12:08:41,156 - 127.0.0.1 - - [26/Oct/2022 12:08:41] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:09:25,302 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:09:25,302 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:09:25,302 -  * Restarting with stat
+2022-10-26 12:09:27,137 -  * Debugger is active!
+2022-10-26 12:09:27,142 -  * Debugger PIN: 125-948-830
+2022-10-26 12:09:31,306 - 127.0.0.1 - - [26/Oct/2022 12:09:31] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:09:31,394 - Could not preprocess data, exception: "None of [Int64Index([1], dtype='int64')] are in the [index]"
+2022-10-26 12:09:31,395 - None
+2022-10-26 12:09:31,433 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 12:09:31,440 - 127.0.0.1 - - [26/Oct/2022 12:09:31] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:11:08,822 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:11:08,822 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:11:08,822 -  * Restarting with stat
+2022-10-26 12:11:11,056 -  * Debugger is active!
+2022-10-26 12:11:11,064 -  * Debugger PIN: 125-948-830
+2022-10-26 12:11:11,686 - 127.0.0.1 - - [26/Oct/2022 12:11:11] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:11:11,728 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:11:11,738 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:11:11,920 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:11:12,124 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:11:12,125 - 127.0.0.1 - - [26/Oct/2022 12:11:12] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:12:07,787 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:12:07,787 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:12:07,787 -  * Restarting with stat
+2022-10-26 12:12:09,702 -  * Debugger is active!
+2022-10-26 12:12:09,702 -  * Debugger PIN: 125-948-830
+2022-10-26 12:12:13,763 - 127.0.0.1 - - [26/Oct/2022 12:12:13] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:12:13,820 -    Unnamed: 0  host_id  ... host_identity_verified host_has_profile_pic
+0           0    37177  ...                      t                    t
+
+[1 rows x 10 columns]
+2022-10-26 12:12:13,854 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:12:13,870 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:12:14,036 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:12:14,181 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:12:14,182 - 127.0.0.1 - - [26/Oct/2022 12:12:14] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:13:58,742 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:13:58,742 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:13:58,742 -  * Restarting with stat
+2022-10-26 12:14:00,809 -  * Debugger is active!
+2022-10-26 12:14:00,816 -  * Debugger PIN: 125-948-830
+2022-10-26 12:14:01,751 - 127.0.0.1 - - [26/Oct/2022 12:14:01] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:14:01,814 -    Unnamed: 0  host_id  ... host_identity_verified host_has_profile_pic
+0           0    37177  ...                      t                    t
+
+[1 rows x 10 columns]
+2022-10-26 12:14:01,851 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:14:01,861 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:14:02,057 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:14:02,209 - Could not predict price could not convert string to float: 't'
+2022-10-26 12:14:02,211 - 127.0.0.1 - - [26/Oct/2022 12:14:02] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:14:18,337 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:14:18,337 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:14:18,339 -  * Restarting with stat
+2022-10-26 12:14:20,527 -  * Debugger is active!
+2022-10-26 12:14:20,534 -  * Debugger PIN: 125-948-830
+2022-10-26 12:14:20,644 - 127.0.0.1 - - [26/Oct/2022 12:14:20] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:14:20,690 - 0    Athens Quality Apartments is a company started...
+Name: host_about, dtype: object
+2022-10-26 12:14:20,691 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:14:20,695 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:14:20,807 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:14:20,982 - Could not predict price could not convert string to float: 't'
+2022-10-26 12:14:20,992 - 127.0.0.1 - - [26/Oct/2022 12:14:20] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:15:02,478 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:15:02,478 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:15:02,478 -  * Restarting with stat
+2022-10-26 12:15:04,572 -  * Debugger is active!
+2022-10-26 12:15:04,582 -  * Debugger PIN: 125-948-830
+2022-10-26 12:16:21,217 - 127.0.0.1 - - [26/Oct/2022 12:16:21] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:16:21,342 - 0    Athens Quality Apartments is a company started...
+Name: host_about, dtype: object
+2022-10-26 12:16:21,346 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:16:21,347 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:16:21,354 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:16:21,561 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                      t                     t
+
+[3 rows x 56 columns]
+2022-10-26 12:16:21,778 - Could not predict price could not convert string to float: 't'
+2022-10-26 12:16:21,780 - 127.0.0.1 - - [26/Oct/2022 12:16:21] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:17:19,383 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:17:19,383 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:17:19,386 -  * Restarting with stat
+2022-10-26 12:17:21,604 -  * Debugger is active!
+2022-10-26 12:17:21,618 -  * Debugger PIN: 125-948-830
+2022-10-26 12:17:22,580 - 127.0.0.1 - - [26/Oct/2022 12:17:22] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:17:22,632 - 0    Athens Quality Apartments is a company started...
+Name: host_about, dtype: object
+2022-10-26 12:17:22,632 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:17:22,640 - Could not preprocess data, exception: "None of [Int64Index([1], dtype='int64')] are in the [index]"
+2022-10-26 12:17:22,640 - None
+2022-10-26 12:17:22,658 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 12:17:22,658 - 127.0.0.1 - - [26/Oct/2022 12:17:22] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:20:15,516 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 12:20:15,967 -  * Restarting with stat
+2022-10-26 12:20:21,016 -  * Debugger is active!
+2022-10-26 12:20:21,034 -  * Debugger PIN: 125-948-830
+2022-10-26 12:22:30,865 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:22:30,865 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:22:30,873 -  * Restarting with stat
+2022-10-26 12:22:32,564 -  * Debugger is active!
+2022-10-26 12:22:32,573 -  * Debugger PIN: 125-948-830
+2022-10-26 12:22:35,068 - 127.0.0.1 - - [26/Oct/2022 12:22:35] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:22:35,141 - 0    1
+Name: host_about, dtype: int64
+2022-10-26 12:22:35,142 - 0    unknown
+Name: host_response_rate, dtype: object
+2022-10-26 12:22:35,143 - 0    unknown
+Name: host_response_time, dtype: object
+2022-10-26 12:22:35,143 - 0   NaN
+Name: host_is_superhost, dtype: float64
+2022-10-26 12:22:35,144 - 0    55
+Name: host_verifications, dtype: int64
+2022-10-26 12:22:35,144 - 0   NaN
+Name: host_has_profile_pic, dtype: float64
+2022-10-26 12:22:35,147 - 0   NaN
+Name: host_identity_verified, dtype: float64
+2022-10-26 12:22:35,156 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:22:35,351 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:22:35,540 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:22:35,540 - 127.0.0.1 - - [26/Oct/2022 12:22:35] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:24:51,105 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:24:51,105 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:24:51,113 -  * Restarting with stat
+2022-10-26 12:24:53,256 -  * Debugger is active!
+2022-10-26 12:24:53,266 -  * Debugger PIN: 125-948-830
+2022-10-26 12:24:53,926 - 127.0.0.1 - - [26/Oct/2022 12:24:53] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:24:54,019 - 7    1
+Name: host_about, dtype: int64
+2022-10-26 12:24:54,023 - 7    unknown
+Name: host_response_rate, dtype: object
+2022-10-26 12:24:54,024 - 7    unknown
+Name: host_response_time, dtype: object
+2022-10-26 12:24:54,025 - 7   NaN
+Name: host_is_superhost, dtype: float64
+2022-10-26 12:24:54,027 - 7    48
+Name: host_verifications, dtype: int64
+2022-10-26 12:24:54,029 - 7   NaN
+Name: host_has_profile_pic, dtype: float64
+2022-10-26 12:24:54,034 - 7   NaN
+Name: host_identity_verified, dtype: float64
+2022-10-26 12:24:54,048 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+7       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:24:54,298 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+7       NaN        NaN  ...                    NaN                   NaN
+
+[3 rows x 56 columns]
+2022-10-26 12:24:54,540 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:24:54,543 - 127.0.0.1 - - [26/Oct/2022 12:24:54] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:57:09,515 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:57:09,515 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:57:09,518 -  * Restarting with stat
+2022-10-26 12:57:11,294 -  * Debugger is active!
+2022-10-26 12:57:11,305 -  * Debugger PIN: 125-948-830
+2022-10-26 12:57:13,580 - 127.0.0.1 - - [26/Oct/2022 12:57:13] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:57:13,646 - 7    1
+Name: host_about, dtype: int64
+2022-10-26 12:57:13,646 - 7    unknown
+Name: host_response_rate, dtype: object
+2022-10-26 12:57:13,646 - 7    unknown
+Name: host_response_time, dtype: object
+2022-10-26 12:57:13,646 - 7    0
+Name: host_is_superhost, dtype: int64
+2022-10-26 12:57:13,654 - 7    48
+Name: host_verifications, dtype: int64
+2022-10-26 12:57:13,655 - 7    1
+Name: host_has_profile_pic, dtype: int64
+2022-10-26 12:57:13,656 - 7    1
+Name: host_identity_verified, dtype: int64
+2022-10-26 12:57:13,656 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+7       NaN        NaN  ...                    1.0                   1.0
+
+[3 rows x 56 columns]
+2022-10-26 12:57:13,775 -    latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0  52.36435    4.94358  ...                    NaN                   NaN
+0       NaN        NaN  ...                    NaN                   NaN
+7       NaN        NaN  ...                    1.0                   1.0
+
+[3 rows x 56 columns]
+2022-10-26 12:57:13,959 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:57:13,959 - 127.0.0.1 - - [26/Oct/2022 12:57:13] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 12:57:58,415 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 12:57:58,415 - [33mPress CTRL+C to quit[0m
+2022-10-26 12:57:58,416 -  * Restarting with stat
+2022-10-26 12:58:00,245 -  * Debugger is active!
+2022-10-26 12:58:00,245 -  * Debugger PIN: 125-948-830
+2022-10-26 12:58:03,217 - 127.0.0.1 - - [26/Oct/2022 12:58:03] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 12:58:03,282 - 12    1
+Name: host_about, dtype: int64
+2022-10-26 12:58:03,283 - 12    90-99%
+Name: host_response_rate, dtype: object
+2022-10-26 12:58:03,284 - 12    within an hour
+Name: host_response_time, dtype: object
+2022-10-26 12:58:03,285 - 12    0
+Name: host_is_superhost, dtype: int64
+2022-10-26 12:58:03,285 - 12    55
+Name: host_verifications, dtype: int64
+2022-10-26 12:58:03,285 - 12    1
+Name: host_has_profile_pic, dtype: int64
+2022-10-26 12:58:03,285 - 12    1
+Name: host_identity_verified, dtype: int64
+2022-10-26 12:58:03,294 -     latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0   52.36435    4.94358  ...                    NaN                   NaN
+0        NaN        NaN  ...                    NaN                   NaN
+12       NaN        NaN  ...                    1.0                   1.0
+
+[3 rows x 56 columns]
+2022-10-26 12:58:03,430 -     latitude  longitude  ... host_identity_verified  host_has_profile_pic
+0   52.36435    4.94358  ...                    NaN                   NaN
+0        NaN        NaN  ...                    NaN                   NaN
+12       NaN        NaN  ...                    1.0                   1.0
+
+[3 rows x 56 columns]
+2022-10-26 12:58:03,589 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 12:58:03,589 - 127.0.0.1 - - [26/Oct/2022 12:58:03] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 13:00:52,444 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 13:00:52,941 -  * Restarting with stat
+2022-10-26 13:00:55,115 -  * Debugger is active!
+2022-10-26 13:00:55,119 -  * Debugger PIN: 125-948-830
+2022-10-26 13:06:27,408 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 13:06:27,608 -  * Restarting with stat
+2022-10-26 13:06:29,841 -  * Debugger is active!
+2022-10-26 13:06:29,850 -  * Debugger PIN: 125-948-830
+2022-10-26 13:07:07,040 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 13:07:07,274 -  * Restarting with stat
+2022-10-26 13:07:09,239 -  * Debugger is active!
+2022-10-26 13:07:09,249 -  * Debugger PIN: 125-948-830
+2022-10-26 13:10:01,059 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 13:10:01,059 - [33mPress CTRL+C to quit[0m
+2022-10-26 13:10:01,061 -  * Restarting with stat
+2022-10-26 13:10:03,006 -  * Debugger is active!
+2022-10-26 13:10:03,008 -  * Debugger PIN: 125-948-830
+2022-10-26 13:10:08,046 - 127.0.0.1 - - [26/Oct/2022 13:10:08] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 13:10:08,058 - Room information not provided. Bad request: {'host_id': 640163, 'listing_info': {'neighbourhood_cleansed': '√ ’∆«', 'latitude': 52.36435, 'longitude': 4.94358, 'property_type': 'Room in boutique hotel', 'room_type': 'Private room', 'accommodates': 3, 'minimum_nights': 3, 'maximum_nights': 15, 'has_availability': True, 'availability_90': 79, 'number_of_reviews': 10, 'license': True, 'instant_bookable': True, 'bathrooms': 1, 'shared_bath': False}, 'amenities': {'kitchen': True, 'air_conditioning': False, 'high_end_electronics': True, 'bbq': False, 'balcony': True, 'nature_and_views': False, 'bed_linen': True, 'breakfast': False, 'tv': True, 'coffee_machine': False, 'cooking_basics': False, 'elevator': True, 'gym': False, 'child_friendly': True, 'parking': False, 'outdoor_space': False, 'host_greeting': False, 'hot_tub_sauna_or_pool': False, 'internet': True, 'long_term_stays': True, 'pets_allowed': False, 'private_entrance': False, 'secure': True, 'self_check_in': True, 'smoking_allowed': True, 'accessible': True, 'event_suitable': True}}
+2022-10-26 13:10:08,059 - 127.0.0.1 - - [26/Oct/2022 13:10:08] "[31m[1mPOST /api/v1.0/model/ HTTP/1.1[0m" 400 -
+2022-10-26 13:12:47,981 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 13:12:47,981 - [33mPress CTRL+C to quit[0m
+2022-10-26 13:12:47,986 -  * Restarting with stat
+2022-10-26 13:12:50,104 -  * Debugger is active!
+2022-10-26 13:12:50,109 -  * Debugger PIN: 125-948-830
+2022-10-26 13:12:51,358 - 127.0.0.1 - - [26/Oct/2022 13:12:51] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 13:12:51,365 - Room information not provided. Bad request: {'host_id': 640163, 'listing_info': {'latitude': 52.36435, 'longitude': 4.94358, 'room_type': 'Private room', 'minimum_nights': 3, 'maximum_nights': 15, 'neighbourhood_cleansed': '√ ’∆«', 'property_type': 'Room in boutique hotel', 'bathrooms': 1, 'shared_bath': False, 'has_availability': True, 'availability_90': 79, 'license': True, 'instant_bookable': True, 'number_of_reviews': 10, 'accommodates': 3}, 'amenities': {'kitchen': True, 'air_conditioning': False, 'high_end_electronics': True, 'bbq': False, 'balcony': True, 'nature_and_views': False, 'bed_linen': True, 'breakfast': False, 'tv': True, 'coffee_machine': False, 'cooking_basics': False, 'elevator': True, 'gym': False, 'child_friendly': True, 'parking': False, 'outdoor_space': False, 'host_greeting': False, 'hot_tub_sauna_or_pool': False, 'internet': True, 'long_term_stays': True, 'pets_allowed': False, 'private_entrance': False, 'secure': True, 'self_check_in': True, 'smoking_allowed': True, 'accessible': True, 'event_suitable': True}}
+2022-10-26 13:12:51,366 - 127.0.0.1 - - [26/Oct/2022 13:12:51] "[31m[1mPOST /api/v1.0/model/ HTTP/1.1[0m" 400 -
+2022-10-26 13:14:09,599 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 13:14:09,599 - [33mPress CTRL+C to quit[0m
+2022-10-26 13:14:09,600 -  * Restarting with stat
+2022-10-26 13:14:11,462 -  * Debugger is active!
+2022-10-26 13:14:11,471 -  * Debugger PIN: 125-948-830
+2022-10-26 13:14:12,744 - 127.0.0.1 - - [26/Oct/2022 13:14:12] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 13:14:12,900 -     host_about host_response_time  ... shared_bath  bathrooms
+0          NaN                NaN  ...         0.0        1.0
+0          NaN                NaN  ...         NaN        NaN
+12         1.0     within an hour  ...         NaN        NaN
+
+[3 rows x 53 columns]
+2022-10-26 13:14:13,164 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 13:14:13,166 - 127.0.0.1 - - [26/Oct/2022 13:14:13] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 13:14:49,685 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 13:14:49,685 - [33mPress CTRL+C to quit[0m
+2022-10-26 13:14:49,686 -  * Restarting with stat
+2022-10-26 13:14:51,858 -  * Debugger is active!
+2022-10-26 13:14:51,870 -  * Debugger PIN: 125-948-830
+2022-10-26 13:14:52,396 - 127.0.0.1 - - [26/Oct/2022 13:14:52] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 13:14:52,513 - Could not predict price only size-1 arrays can be converted to Python scalars
+2022-10-26 13:14:52,517 - 127.0.0.1 - - [26/Oct/2022 13:14:52] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 13:17:54,757 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 13:17:55,093 -  * Restarting with stat
+2022-10-26 13:17:59,264 -  * Debugger is active!
+2022-10-26 13:17:59,272 -  * Debugger PIN: 125-948-830
+2022-10-26 13:31:14,291 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 13:31:14,291 - [33mPress CTRL+C to quit[0m
+2022-10-26 13:31:14,299 -  * Restarting with stat
+2022-10-26 13:31:16,272 -  * Debugger is active!
+2022-10-26 13:31:16,282 -  * Debugger PIN: 125-948-830
+2022-10-26 13:31:17,366 - 127.0.0.1 - - [26/Oct/2022 13:31:17] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 13:31:17,605 - Could not predict price X has 3 features, but ColumnTransformer is expecting 53 features as input.
+2022-10-26 13:31:17,607 - 127.0.0.1 - - [26/Oct/2022 13:31:17] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:02:39,122 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 18:02:41,031 -  * Restarting with stat
+2022-10-26 18:02:47,234 -  * Debugger is active!
+2022-10-26 18:02:47,249 -  * Debugger PIN: 125-948-830
+2022-10-26 18:06:11,482 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:06:11,482 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:06:11,484 -  * Restarting with stat
+2022-10-26 18:06:14,148 -  * Debugger is active!
+2022-10-26 18:06:14,154 -  * Debugger PIN: 125-948-830
+2022-10-26 18:06:14,306 - 127.0.0.1 - - [26/Oct/2022 18:06:14] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:06:14,536 - Could not predict price X has 3 features, but ColumnTransformer is expecting 53 features as input.
+2022-10-26 18:06:14,541 - 127.0.0.1 - - [26/Oct/2022 18:06:14] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:06:40,556 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:06:40,556 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:06:40,558 -  * Restarting with stat
+2022-10-26 18:06:42,551 -  * Debugger is active!
+2022-10-26 18:06:42,556 -  * Debugger PIN: 125-948-830
+2022-10-26 18:06:47,965 - 127.0.0.1 - - [26/Oct/2022 18:06:47] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:06:48,134 - [0     NaN
+0     NaN
+12    1.0
+Name: host_about, dtype: float64, 0                NaN
+0                NaN
+12    within an hour
+Name: host_response_time, dtype: object, 0        NaN
+0        NaN
+12    90-99%
+Name: host_response_rate, dtype: object, 0     NaN
+0     NaN
+12    0.0
+Name: host_is_superhost, dtype: float64, 0      NaN
+0      NaN
+12    55.0
+Name: host_verifications, dtype: float64, 0     NaN
+0     NaN
+12    1.0
+Name: host_has_profile_pic, dtype: float64, 0     NaN
+0     NaN
+12    1.0
+Name: host_identity_verified, dtype: float64, 0     √ ’∆«
+0       NaN
+12      NaN
+Name: neighbourhood_cleansed, dtype: object, 0     52.36435
+0          NaN
+12         NaN
+Name: latitude, dtype: float64, 0     4.94358
+0         NaN
+12        NaN
+Name: longitude, dtype: float64, 0     Room in boutique hotel
+0                        NaN
+12                       NaN
+Name: property_type, dtype: object, 0     Private room
+0              NaN
+12             NaN
+Name: room_type, dtype: object, 0     3.0
+0     NaN
+12    NaN
+Name: accommodates, dtype: float64, 0     3.0
+0     NaN
+12    NaN
+Name: minimum_nights, dtype: float64, 0     15.0
+0      NaN
+12     NaN
+Name: maximum_nights, dtype: float64, 0     1.0
+0     NaN
+12    NaN
+Name: has_availability, dtype: float64, 0     79.0
+0      NaN
+12     NaN
+Name: availability_90, dtype: float64, 0     10.0
+0      NaN
+12     NaN
+Name: number_of_reviews, dtype: float64, 0     1.0
+0     NaN
+12    NaN
+Name: license, dtype: float64, 0     1.0
+0     NaN
+12    NaN
+Name: instant_bookable, dtype: float64, 0     NaN
+0     NaN
+12    9.0
+Name: calculated_host_listings_count, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: kitchen, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: air_conditioning, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: high_end_electronics, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: bbq, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: balcony, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: nature_and_views, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: bed_linen, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: breakfast, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: tv, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: coffee_machine, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: cooking_basics, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: elevator, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: gym, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: child_friendly, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: parking, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: outdoor_space, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: host_greeting, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: hot_tub_sauna_or_pool, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: internet, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: long_term_stays, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: pets_allowed, dtype: float64, 0     NaN
+0     0.0
+12    NaN
+Name: private_entrance, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: secure, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: self_check_in, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: smoking_allowed, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: accessible, dtype: float64, 0     NaN
+0     1.0
+12    NaN
+Name: event_suitable, dtype: float64, 0       2
+0     NaN
+12    NaN
+Name: neighbourhood_cleansed_group, dtype: object, 0      NaN
+0     14.0
+12     NaN
+Name: amenities_number, dtype: float64, 0     2163.908649
+0             NaN
+12            NaN
+Name: distance_parthenon, dtype: float64, 0     0.0
+0     NaN
+12    NaN
+Name: shared_bath, dtype: float64, 0     1.0
+0     NaN
+12    NaN
+Name: bathrooms, dtype: float64]
+2022-10-26 18:06:48,224 - Could not predict price X has 3 features, but ColumnTransformer is expecting 53 features as input.
+2022-10-26 18:06:48,227 - 127.0.0.1 - - [26/Oct/2022 18:06:48] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:08:08,573 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:08:08,573 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:08:08,575 -  * Restarting with stat
+2022-10-26 18:08:11,237 -  * Debugger is active!
+2022-10-26 18:08:11,243 -  * Debugger PIN: 125-948-830
+2022-10-26 18:08:12,064 - 127.0.0.1 - - [26/Oct/2022 18:08:12] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:08:12,134 - Could not preprocess data, exception: ('host_about', 'host_response_time', 'host_response_rate', 'host_is_superhost', 'host_verifications', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'minimum_nights', 'maximum_nights', 'has_availability', 'availability_90', 'number_of_reviews', 'license', 'instant_bookable', 'calculated_host_listings_count', 'kitchen', 'air_conditioning', 'high_end_electronics', 'bbq', 'balcony', 'nature_and_views', 'bed_linen', 'breakfast', 'tv', 'coffee_machine', 'cooking_basics', 'elevator', 'gym', 'child_friendly', 'parking', 'outdoor_space', 'host_greeting', 'hot_tub_sauna_or_pool', 'internet', 'long_term_stays', 'pets_allowed', 'private_entrance', 'secure', 'self_check_in', 'smoking_allowed', 'accessible', 'event_suitable', 'neighbourhood_cleansed_group', 'amenities_number', 'distance_parthenon', 'shared_bath', 'bathrooms')
+2022-10-26 18:08:12,155 - None
+2022-10-26 18:08:12,155 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 18:08:12,157 - 127.0.0.1 - - [26/Oct/2022 18:08:12] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:08:33,931 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:08:33,931 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:08:33,932 -  * Restarting with stat
+2022-10-26 18:08:35,917 -  * Debugger is active!
+2022-10-26 18:08:35,921 -  * Debugger PIN: 125-948-830
+2022-10-26 18:08:36,551 - 127.0.0.1 - - [26/Oct/2022 18:08:36] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:08:36,603 - Could not preprocess data, exception: ('host_about', 'host_response_time', 'host_response_rate', 'host_is_superhost', 'host_verifications', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'minimum_nights', 'maximum_nights', 'has_availability', 'availability_90', 'number_of_reviews', 'license', 'instant_bookable', 'calculated_host_listings_count', 'kitchen', 'air_conditioning', 'high_end_electronics', 'bbq', 'balcony', 'nature_and_views', 'bed_linen', 'breakfast', 'tv', 'coffee_machine', 'cooking_basics', 'elevator', 'gym', 'child_friendly', 'parking', 'outdoor_space', 'host_greeting', 'hot_tub_sauna_or_pool', 'internet', 'long_term_stays', 'pets_allowed', 'private_entrance', 'secure', 'self_check_in', 'smoking_allowed', 'accessible', 'event_suitable', 'neighbourhood_cleansed_group', 'amenities_number', 'distance_parthenon', 'shared_bath', 'bathrooms')
+2022-10-26 18:08:36,616 - None
+2022-10-26 18:08:36,616 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 18:08:36,618 - 127.0.0.1 - - [26/Oct/2022 18:08:36] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:10:25,802 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:10:25,802 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:10:25,805 -  * Restarting with stat
+2022-10-26 18:10:27,668 -  * Debugger is active!
+2022-10-26 18:10:27,672 -  * Debugger PIN: 125-948-830
+2022-10-26 18:10:29,411 - 127.0.0.1 - - [26/Oct/2022 18:10:29] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:10:29,497 - Could not preprocess data, exception: ('host_about', 'host_response_time', 'host_response_rate', 'host_is_superhost', 'host_verifications', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'minimum_nights', 'maximum_nights', 'has_availability', 'availability_90', 'number_of_reviews', 'license', 'instant_bookable', 'calculated_host_listings_count', 'kitchen', 'air_conditioning', 'high_end_electronics', 'bbq', 'balcony', 'nature_and_views', 'bed_linen', 'breakfast', 'tv', 'coffee_machine', 'cooking_basics', 'elevator', 'gym', 'child_friendly', 'parking', 'outdoor_space', 'host_greeting', 'hot_tub_sauna_or_pool', 'internet', 'long_term_stays', 'pets_allowed', 'private_entrance', 'secure', 'self_check_in', 'smoking_allowed', 'accessible', 'event_suitable', 'neighbourhood_cleansed_group', 'amenities_number', 'distance_parthenon', 'shared_bath', 'bathrooms')
+2022-10-26 18:10:29,519 - None
+2022-10-26 18:10:29,520 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 18:10:29,522 - 127.0.0.1 - - [26/Oct/2022 18:10:29] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:11:32,642 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:11:32,642 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:11:32,644 -  * Restarting with stat
+2022-10-26 18:11:34,988 -  * Debugger is active!
+2022-10-26 18:11:34,995 -  * Debugger PIN: 125-948-830
+2022-10-26 18:11:35,808 - 127.0.0.1 - - [26/Oct/2022 18:11:35] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:11:35,929 - Could not preprocess data, exception: ('host_about', 'host_response_time', 'host_response_rate', 'host_is_superhost', 'host_verifications', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'minimum_nights', 'maximum_nights', 'has_availability', 'availability_90', 'number_of_reviews', 'license', 'instant_bookable', 'calculated_host_listings_count', 'kitchen', 'air_conditioning', 'high_end_electronics', 'bbq', 'balcony', 'nature_and_views', 'bed_linen', 'breakfast', 'tv', 'coffee_machine', 'cooking_basics', 'elevator', 'gym', 'child_friendly', 'parking', 'outdoor_space', 'host_greeting', 'hot_tub_sauna_or_pool', 'internet', 'long_term_stays', 'pets_allowed', 'private_entrance', 'secure', 'self_check_in', 'smoking_allowed', 'accessible', 'event_suitable', 'neighbourhood_cleansed_group', 'amenities_number', 'distance_parthenon', 'shared_bath', 'bathrooms')
+2022-10-26 18:11:35,964 - None
+2022-10-26 18:11:35,965 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 18:11:35,969 - 127.0.0.1 - - [26/Oct/2022 18:11:35] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:12:06,835 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-26 18:12:06,835 - [33mPress CTRL+C to quit[0m
+2022-10-26 18:12:06,836 -  * Restarting with stat
+2022-10-26 18:12:08,820 -  * Debugger is active!
+2022-10-26 18:12:08,825 -  * Debugger PIN: 125-948-830
+2022-10-26 18:12:10,406 - 127.0.0.1 - - [26/Oct/2022 18:12:10] "[32mPOST /api/v1.0/model HTTP/1.1[0m" 308 -
+2022-10-26 18:12:10,477 - Could not preprocess data, exception: ('host_about', 'host_response_time', 'host_response_rate', 'host_is_superhost', 'host_verifications', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood_cleansed', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'minimum_nights', 'maximum_nights', 'has_availability', 'availability_90', 'number_of_reviews', 'license', 'instant_bookable', 'calculated_host_listings_count', 'kitchen', 'air_conditioning', 'high_end_electronics', 'bbq', 'balcony', 'nature_and_views', 'bed_linen', 'breakfast', 'tv', 'coffee_machine', 'cooking_basics', 'elevator', 'gym', 'child_friendly', 'parking', 'outdoor_space', 'host_greeting', 'hot_tub_sauna_or_pool', 'internet', 'long_term_stays', 'pets_allowed', 'private_entrance', 'secure', 'self_check_in', 'smoking_allowed', 'accessible', 'event_suitable', 'neighbourhood_cleansed_group', 'amenities_number', 'distance_parthenon', 'shared_bath', 'bathrooms')
+2022-10-26 18:12:10,501 - None
+2022-10-26 18:12:10,501 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-26 18:12:10,504 - 127.0.0.1 - - [26/Oct/2022 18:12:10] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-26 18:40:35,223 -  * Detected change in 'C:\\Users\\Tzeni\\Desktop\\Project_git\\pfizer-dsmasterclass-2022-team3\\api\\services\\model_service.py', reloading
+2022-10-26 18:40:35,711 -  * Restarting with stat

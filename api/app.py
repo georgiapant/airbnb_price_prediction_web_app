@@ -9,9 +9,12 @@ from flask_cors import CORS
 from controllers import model_controller, stats_controller
 
 app = Flask(__name__)
+# cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 # Enabling CORS for our app
 CORS(app)
-
+# CORS(app, origins="http://127.0.0.1:5000/api/v1.0/model",
+#     allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"],
+#     supports_credentials=True)
 
 @app.errorhandler(500)
 def server_error(error):
@@ -27,9 +30,12 @@ def not_found(error):
 def bad_request(error):
     return jsonify({"error": "Bad Request"}), 400
 
+app.config['JSON_AS_ASCII'] = False
 
 app.register_blueprint(model_controller.model_api)
 app.register_blueprint(stats_controller.api)
 
+
 if __name__ == "__main__":
+
     app.run(debug=True)

@@ -15,6 +15,7 @@ def main():
 
 def retrieve_data():
     with open(os.getcwd() + "/repo/stats.json", "r", encoding='utf8') as f:
+    # with open(os.getcwd() + "/repo/json_test.json", "r", encoding='utf8') as f:
         fileData = json.load(f)
         f.close()
     return fileData

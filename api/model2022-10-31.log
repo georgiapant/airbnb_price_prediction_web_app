@@ -1,0 +1,89 @@
+2022-10-31 14:18:15,029 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-31 14:18:15,031 - [33mPress CTRL+C to quit[0m
+2022-10-31 14:18:15,037 -  * Restarting with stat
+2022-10-31 14:18:16,918 -  * Debugger is active!
+2022-10-31 14:18:16,931 -  * Debugger PIN: 999-206-577
+2022-10-31 14:22:36,906 - 127.0.0.1 - - [31/Oct/2022 14:22:36] "GET /api/v1.0/stats/ HTTP/1.1" 200 -
+2022-10-31 14:24:34,097 - 127.0.0.1 - - [31/Oct/2022 14:24:34] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:24:34,120 -    kitchen  ...  amenities_number
+0        0  ...                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:24:34,218 - <class 'pandas.core.series.Series'>
+2022-10-31 14:24:34,285 -    host_about  ... amenities_number
+0           1  ...                0
+
+[1 rows x 53 columns]
+2022-10-31 14:24:34,381 - Could not predict price No module named 'sklearn'
+2022-10-31 14:24:34,382 - 127.0.0.1 - - [31/Oct/2022 14:24:34] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 14:30:37,476 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-31 14:30:37,476 - [33mPress CTRL+C to quit[0m
+2022-10-31 14:30:37,479 -  * Restarting with stat
+2022-10-31 14:30:39,099 -  * Debugger is active!
+2022-10-31 14:30:39,108 -  * Debugger PIN: 999-206-577
+2022-10-31 14:30:54,091 - 127.0.0.1 - - [31/Oct/2022 14:30:54] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:30:54,101 -    kitchen  ...  amenities_number
+0        0  ...                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:30:54,172 - <class 'pandas.core.series.Series'>
+2022-10-31 14:30:54,235 -    host_about  ... amenities_number
+0           1  ...                0
+
+[1 rows x 53 columns]
+2022-10-31 14:30:54,334 - Could not predict price No module named 'sklearn'
+2022-10-31 14:30:54,336 - 127.0.0.1 - - [31/Oct/2022 14:30:54] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 14:34:08,734 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-31 14:34:08,736 - [33mPress CTRL+C to quit[0m
+2022-10-31 14:34:08,740 -  * Restarting with stat
+2022-10-31 14:34:10,901 -  * Debugger is active!
+2022-10-31 14:34:10,909 -  * Debugger PIN: 999-206-577
+2022-10-31 14:34:17,476 - 127.0.0.1 - - [31/Oct/2022 14:34:17] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:34:17,488 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        0                 0  ...               0                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:34:17,565 - <class 'pandas.core.series.Series'>
+2022-10-31 14:34:17,629 -    host_about host_response_time  ... event_suitable  amenities_number
+0           1     within an hour  ...              0                 0
+
+[1 rows x 53 columns]
+2022-10-31 14:34:18,414 - Could not predict price 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+2022-10-31 14:34:18,418 - 127.0.0.1 - - [31/Oct/2022 14:34:18] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 14:34:29,259 - 127.0.0.1 - - [31/Oct/2022 14:34:29] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:34:29,268 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        0                 0  ...               0                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:34:29,341 - <class 'pandas.core.series.Series'>
+2022-10-31 14:34:29,393 -    host_about host_response_time  ... event_suitable  amenities_number
+0           1     within an hour  ...              0                 0
+
+[1 rows x 53 columns]
+2022-10-31 14:34:29,534 - Could not predict price 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+2022-10-31 14:34:29,537 - 127.0.0.1 - - [31/Oct/2022 14:34:29] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 14:34:58,096 - 127.0.0.1 - - [31/Oct/2022 14:34:58] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:34:58,106 -    kitchen  air_conditioning  ...  event_suitable  amenities_number
+0        0                 0  ...               0                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:34:58,178 - <class 'pandas.core.series.Series'>
+2022-10-31 14:34:58,228 -    host_about host_response_time  ... event_suitable  amenities_number
+0           1     within an hour  ...              0                 0
+
+[1 rows x 53 columns]
+2022-10-31 14:34:58,399 - Could not predict price 'OneHotEncoder' object has no attribute '_infrequent_enabled'
+2022-10-31 14:34:58,406 - 127.0.0.1 - - [31/Oct/2022 14:34:58] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
+2022-10-31 14:38:44,365 - 127.0.0.1 - - [31/Oct/2022 14:38:44] "OPTIONS /api/v1.0/model/ HTTP/1.1" 200 -
+2022-10-31 14:38:44,374 -    kitchen  ...  amenities_number
+0        0  ...                 0
+
+[1 rows x 28 columns]
+2022-10-31 14:38:44,438 - Could not preprocess data, exception: invalid literal for int() with base 10: ''
+2022-10-31 14:38:44,470 - Could not predict price Expected 2D array, got scalar array instead:
+array=None.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2022-10-31 14:38:44,473 - 127.0.0.1 - - [31/Oct/2022 14:38:44] "[33mPOST /api/v1.0/model/ HTTP/1.1[0m" 404 -
