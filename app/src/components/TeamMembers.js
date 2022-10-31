@@ -15,7 +15,6 @@ const TeamMembers = () => (
       renderItem={({ name, image, description }) => (
         <List.Item>
           <List.Item.Meta
-            avatar={<Avatar size={45} src={image} />}
             title={name}
             description={description}
           />

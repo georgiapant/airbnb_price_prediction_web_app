@@ -30,7 +30,8 @@ def main(data):
             "price": round(float(price),2)
         }
         # return {'listing_info': info_to_return, 'prediction': {'price': int(price)}}
-        return {'price': round(float(price),2)}
+        price = "Predicted price: " + str(round(float(price),2)) +"$"
+        return {'price': price}
         # return {'info': info_to_return}
         
     

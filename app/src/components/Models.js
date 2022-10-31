@@ -90,6 +90,7 @@ const Models = () => {
     //});
   };
 
+
   return (
     <Card>
       <Title>Models form</Title>
@@ -290,10 +291,12 @@ const Models = () => {
       </form>
 
       <Divider />
+      
 
       {models && (
+        
         <div>
-          <Title level={3}>Predicted price: {models['price']}$</Title>       
+          <Title level={3}>{models['price']}</Title>       
         </div>
       )}
     </Card>

@@ -90,8 +90,10 @@ def model():
     result = model_service.main(request.json)
     
     if not result:
-        abort(404)
+        result = {"price":"Please check your inputs!"}
+        # abort(404)
     if result.get('error'):
         abort(500)
     logger.error(result)
+
     return jsonify(result), 200
