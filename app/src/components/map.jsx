@@ -4,6 +4,8 @@ import L from "leaflet";
 import "leaflet.heat";
 import { addressPoints } from "../data/listing_points";
 
+// Code taken from: https://stackoverflow.com/questions/63640081/is-there-a-way-to-use-leaflet-heat-in-react 
+
 export default function Map() {
   useEffect(() => {
     var map = L.map("map").setView([37.983810, 23.727539], 12);

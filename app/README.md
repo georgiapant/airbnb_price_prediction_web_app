@@ -13,6 +13,8 @@ The application was created with `create-react-app`. The below 4 libraries were 
 
 ```
 npm install
+npm i leaflet
+npm i leaflet.heat
 npm start
 open http://localhost:3000
 ```

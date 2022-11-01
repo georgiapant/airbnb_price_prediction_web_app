@@ -94,6 +94,6 @@ def model():
         # abort(404)
     if result.get('error'):
         abort(500)
-    logger.error(result)
+    # logger.error(result)
 
     return jsonify(result), 200

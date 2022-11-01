@@ -5,3 +5,13 @@ app/node_modules
 model*
 .vscode
 api/.idea
+api/__pycache__
+app/__pycache__
+app/.DS_Store
+api/.DS_Store
+app/src/.DS_Store
+.gitignore
+app/package-lock.json
+app/.DS_Store
+api/.DS_Store
+app/src/.DS_Store
