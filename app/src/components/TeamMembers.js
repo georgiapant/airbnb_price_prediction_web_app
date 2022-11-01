@@ -1,5 +1,5 @@
 import React from 'react'
-import { List, Typography, Divider, Avatar } from "antd";
+import { List, Typography, Divider } from "antd";
 import team from "../data/teamMembers";
 
 const { Title } = Typography;

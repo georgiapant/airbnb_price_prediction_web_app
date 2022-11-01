@@ -1,11 +1,9 @@
 import React from 'react'
-import { useState, useEffect, PureComponent} from "react";
-import { Typography, Divider, Row, Col, Spin, Table } from "antd";
+import { useState, useEffect} from "react";
+import { Typography, Divider, Row, Col, Spin } from "antd";
 
 import {
   ResponsiveContainer,
-  // LineChart,
-  // Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -22,40 +20,11 @@ import {
   Label
 } from "recharts";
 import { getStats} from "../api/api";
-// import {columns, data} from "../data/neighbourhood_groups";
 import Map from "./map";
 
 
 const { Title } = Typography;
 const COLORS = ['#F47A1F','#7f1005', '#FDBB2F', '#377B2B', '#7AC142', '#007CC3',  '#00529B'] //, '#8DC77B', '#A5D297', '#E2CF45', '#F8C12D'];
-
-// class CustomizedContent extends PureComponent {
-//   render() {
-//     const { root, depth, x, y, width, height, index, colors, name } = this.props;
-
-//     return (
-//       <g>
-//         <rect
-//           x={x}
-//           y={y}
-//           width={width}
-//           height={height}
-//           style={{
-//             fill: depth < 2 ? colors[Math.floor((index / root.children.length) * 7)] : 'none',
-//             stroke: '#fff',
-//             strokeWidth: 2 / (depth + 1e-10),
-//             strokeOpacity: 1 / (depth + 1e-10),
-//           }}
-//         />
-//         {depth === 1 ? (
-//           <text x={x + width / 2} y={y + height / 2 + 7} textAnchor="middle" fill="#fff" fontSize={14}>
-//             {name}
-//           </text>
-//         ) : null}
-//       </g>
-//     );
-//   }
-// }
 
 const RADIAN = Math.PI / 180;
 const CustomizedLabel = ({

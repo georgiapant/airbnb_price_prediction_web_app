@@ -14,6 +14,7 @@ import { makeModelsPost } from "../api/api";
 import {amenities} from "../data/amenities";
 import {property_type} from "../data/property_type";
 import { neighbourhood } from '../data/neighbourhoods';
+import { host_ids } from '../data/host_ids';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -46,7 +47,7 @@ const Models = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     // console.log(name, value); // Uncomment to view name/value pair
-    setFormValues({ ...formValues, [name]: value });
+    setFormValues({ ...formValues, [name]: value })
   };
   const handleSelectChange = (value) => {
     setFormValues({ ...formValues, room_type: value });
@@ -90,20 +91,77 @@ const Models = () => {
     //});
   };
 
+  const [btndisabled, setbtndisabled] = useState(true);
+  const onValuesChange = (changedValues, allValues) => {
+
+    if ( allValues.host_id !== undefined && allValues.latitude !== undefined && allValues.longitude !== undefined 
+      && allValues.neighbourhood_cleansed !== undefined && allValues.maximum_nights !== undefined && allValues.minimum_nights !== undefined 
+      && allValues.room_type !== undefined && allValues.property_type !== undefined 
+      
+      && allValues.host_id !== '' && allValues.latitude !== '' && allValues.longitude !== '' 
+      && allValues.neighbourhood_cleansed !== '' && allValues.maximum_nights !== '' && allValues.minimum_nights !== '' 
+      && allValues.room_type !== '' && allValues.property_type !== '' ) 
+      {
+      setbtndisabled(false);
+    } else {
+      setbtndisabled(true);
+    }
+    console.log(allValues);
+  };
+
 
   return (
     <Card>
+      {/* <div> 
+        <FormErrors formErrors={validValues.formErrors.host_id} />
+      </div> */}
+      
       <Title>Models form</Title>
-      <form>
-        <Form.Item label="Host ID">
+      <Form 
+          onFinish={(values) => {
+            console.log({ values });
+          }}
+          onFinishFailed={(error) => {
+            console.log({ error });
+          }}
+          onValuesChange={onValuesChange}
+        >
+      {/* <form> */}
+        <Form.Item label="Host ID" name="host_id" rules={[
+              {
+                required: true,
+                message: "Please provide your host ID",
+              },
+              {
+                validator: (_, value) =>
+                  value && host_ids.includes(value)
+                    ? Promise.resolve()
+                    : Promise.reject("User ID is not valid"),
+              },
+            ]}
+            hasFeedback
+            >
           <Input
             placeholder=""
             name="host_id"
             value={formValues.host_id}
             onChange={handleInputChange}
+            
           />
         </Form.Item>
-        <Form.Item label="Latitude">
+        <Form.Item label="Latitude" name="latitude" rules={[
+              {
+                required: true,
+                message: "Please enter a latitude",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="latitude"
@@ -112,7 +170,19 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Longitude">
+        <Form.Item label="Longitude" name="longitude" rules={[
+              {
+                required: true,
+                message: "Please enter a longitude",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="longitude"
@@ -121,7 +191,13 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Neighbourhood">
+        <Form.Item label="Neighbourhood" name="neighbourhood_cleansed" rules={[
+              {
+                required: true,
+                message: "Please select a neighbourhood",
+              },
+            ]}
+            hasFeedback>
           <Select
 
             name="neighbourhood_cleansed"
@@ -142,7 +218,19 @@ const Models = () => {
         </Form.Item>
 
 
-        <Form.Item label="Maximum nights of accommodation">
+        <Form.Item label="Maximum nights of accommodation" name="maximum_nights" rules={[
+              {
+                required: true,
+                message: "Please provide the maximum nights",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="maximum_nights"
@@ -151,7 +239,19 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Minimun nights of accommodation">
+        <Form.Item label="Minimun nights of accommodation" name="minimum_nights" rules={[
+              {
+                required: true,
+                message: "Please provide the minimum nights",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="minimum_nights"
@@ -160,7 +260,19 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Maximum number of guests">
+        <Form.Item label="Maximum number of guests" name="accommodates" rules={[
+              {
+                required: true,
+                message: "Please provide the maximum number of guests",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="accommodates"
@@ -169,7 +281,19 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Last 3 months availability">
+        <Form.Item label="Last 3 months availability" name="availability_90" rules={[
+              {
+                required: true,
+                message: "Please provide the 3 months availability"
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}  
+              hasFeedback>
           <Input
             placeholder=""
             name="availability_90"
@@ -178,7 +302,19 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Number of reviews">
+        <Form.Item label="Number of reviews" name="number_of_reviews" rules={[
+              {
+                required: true,
+                message: "Please provide number of reviews"
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+              hasFeedback>
           <Input
             placeholder=""
             name="number_of_reviews"
@@ -187,7 +323,13 @@ const Models = () => {
             type='number'
           />
         </Form.Item>
-        <Form.Item label="Room Type">
+        <Form.Item label="Room Type" name="room_type" rules={[
+              {
+                required: true,
+                message: "Please select a room type",
+              },
+            ]}
+            hasFeedback>
           <Select
 
             name="room_type"
@@ -202,7 +344,13 @@ const Models = () => {
             <Option value="Entire home/apt">Entire home or apartment</Option>
           </Select>
         </Form.Item>
-        <Form.Item label="Property Type">
+        <Form.Item label="Property Type" name="property_type" rules={[
+              {
+                required: true,
+                message: "Please select a property type",
+              },
+            ]}
+            hasFeedback>
           <Select
 
             name="property_type"
@@ -239,7 +387,19 @@ const Models = () => {
            
           </Select>
         </Form.Item>
-        <Form.Item label="Number of bathrooms">
+        <Form.Item label="Number of bathrooms" name="bathrooms" rules={[
+              {
+                required: true,
+                message: "Please add number of bathrooms",
+              },
+              {
+                validator: (_, value) =>
+                  value && value>0
+                    ? Promise.resolve()
+                    : Promise.reject("Please enter a correct value"),
+              },
+            ]}
+            hasFeedback>
           <Input
             placeholder=""
             name="bathrooms"
@@ -284,11 +444,11 @@ const Models = () => {
             Reset
           </Button>
           &nbsp;
-          <Button type="primary" onClick={handleFormSubmit}>
+          <Button type="primary" onClick={handleFormSubmit} htmlType="submit" disabled={btndisabled}>
             Submit
           </Button>
         </Form.Item>
-      </form>
+      </Form>
 
       <Divider />
       
