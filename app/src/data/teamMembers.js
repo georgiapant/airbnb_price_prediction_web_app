@@ -3,7 +3,7 @@ export default [
   {
     name: "Athina Mousia",
     description:
-      "Hi! I am an enthusiast postgraduate student on business analytics and data science. I graduated from the department of Mathematics  at Aristotle University of Thessaloniki.",
+      "Hi! I am an enthusiastic postgraduate student on business analytics and data science. I graduated from the department of Mathematics  at Aristotle University of Thessaloniki.",
   },
   {
     name: "Dimitris Romios",
