@@ -288,7 +288,7 @@ const Models = () => {
               },
               {
                 validator: (_, value) =>
-                  value && value>0
+                  value && value>=0
                     ? Promise.resolve()
                     : Promise.reject("Please enter a correct value"),
               },
@@ -309,7 +309,7 @@ const Models = () => {
               },
               {
                 validator: (_, value) =>
-                  value && value>0
+                  value && value>=0
                     ? Promise.resolve()
                     : Promise.reject("Please enter a correct value"),
               },
@@ -394,7 +394,7 @@ const Models = () => {
               },
               {
                 validator: (_, value) =>
-                  value && value>0
+                  value && value>=0
                     ? Promise.resolve()
                     : Promise.reject("Please enter a correct value"),
               },
