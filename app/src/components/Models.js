@@ -116,7 +116,7 @@ const Models = () => {
         <FormErrors formErrors={validValues.formErrors.host_id} />
       </div> */}
       
-      <Title>Models form</Title>
+      <Title>Listing information</Title>
       <Form 
           onFinish={(values) => {
             console.log({ values });
