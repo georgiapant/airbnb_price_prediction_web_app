@@ -16,7 +16,6 @@ import {
   PieChart,
   Pie,
   Cell,
-  // Treemap,
   Label
 } from "recharts";
 import { getStats} from "../api/api";
@@ -53,39 +52,10 @@ const Stats = () => {
 
   return (
     <div>
-      <Title>Stats page</Title>
+      <Title>Statistics dashboard</Title>
       <Divider />
       {statsData ? (
         <>
-          {/* <Row className="row" gutter={[24, 24]}>
-            <Col style={{ width: "100%" }}>
-              <div className="chart-container">
-                <Title level={4}>My super line chart</Title>
-                <div className="chart-inner">
-                  <ResponsiveContainer>
-                    <LineChart
-                      data={statsData.lineChart}
-                      margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                      }}
-                    >
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }}/>
-                      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            </Col>
-          </Row> */}
-
           <Row className="row" gutter={[24, 24]}>
             <Col sm={{ span: 24 }} lg={{ span: 12 }}>
               <div className="chart-container">
@@ -125,16 +95,6 @@ const Stats = () => {
               </div>
             </Col>
           </Row>
-          {/* <Row className="row" gutter={[24, 24]} >
-          <Col style={{ width: "100%" }} sm={{ span: 24 }} lg={{ span: 24 }}>
-            <div className="table-container">
-            <Title level={4}>Neighbourhood groupings</Title>
-                <div className="chart-inner-table">
-                    <Table columns={columns} dataSource={data} size="small"/>
-                </div>
-              </div>
-            </Col>
-          </Row> */}
           <Row className="row" gutter={[24, 24]}>
             <Col sm={{ span: 24 }} lg={{ span: 12 }}>
               <div className="chart-container">
@@ -175,22 +135,7 @@ const Stats = () => {
                 <Title level={4} fontSize={9}>Count of listings (outer) and average price (inner) per room type</Title>
                 <div className="chart-inner" >
                   <ResponsiveContainer style={{height:"100%" }}>
-                    {/* <Treemap
-                        width={730}
-                        height={250}
-                        data={statsData.treeMap_groups}
-                        dataKey="price"
-                        ratio={4 / 3}
-                        // stroke="#fff"
-                        // fill="#8884d8"
-                        // label={{ position: 'center' }}
-                        content={<CustomizedContent colors={COLORS} />}
-                        >
-                      <Tooltip />
-                      <Legend />
-                      </Treemap> */}
-                      <PieChart >
-                        
+                      <PieChart >                       
                         <Pie data={statsData.pieChart_room_type} 
                              dataKey="price" 
                              nameKey="type" 
